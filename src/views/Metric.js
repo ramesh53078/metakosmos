@@ -56,6 +56,47 @@ function Metric() {
 
   return (
     <>
+     <div style={{width:'85%',marginLeft:'275px',marginTop:'10px'}}>
+                <Row className="">
+                  <Col md="4">
+                  <th>Date: {new Date().toLocaleDateString()}</th>
+                  </Col>
+                  <Col md="4">
+                  <th>Suit ID : KS 001</th>
+                  </Col><Col md="4">
+                  <th>Session ID : KS 001 aced1567</th>
+                  </Col>
+                </Row>
+                {/* <hr></hr> */}
+                <Row className="">
+                  <Col md="2">
+                  <th>Name : John Doe</th>
+                  </Col>
+                  <Col md="2">
+                  <th>Age 26</th>
+                  </Col>
+                  <Col md="2">
+                  <th>Gender : Male</th>
+                  </Col>
+                  <Col md="3">
+                  <th>Ethnicity : Asian</th>
+                  </Col>
+                  <Col md="3">
+                  <th>Stage : Preflight</th>
+                  </Col>
+                </Row>
+
+                  {/* <hr></hr> */}
+
+                  <Row className="">
+                  <Col md="4">
+                  <th>Vessel: NASA</th>
+                  </Col>
+                  <Col md="4">
+                  <th>Location: GPS Enabled</th>
+                  </Col>
+                </Row>
+                </div>
       <div className="content">
         <Row>
           <Col md="12">
@@ -63,17 +104,7 @@ function Metric() {
             // style={{backgroundColor:'rgba(136,120,130,255)'}}
             >
               <CardHeader>
-              {/* <Table className="tablesorter bg-primary" >
-                  <thead className="text-primary">
-                    <tr>
-                      <th>Name</th>
-                      <th>Country</th>
-                      <th>City</th>
-                      <th className="text-center">Salary</th>
-                    </tr>
-                  </thead>
-                  
-                </Table> */}
+
               </CardHeader>
               <CardBody className="all-icons">
                 <Row>

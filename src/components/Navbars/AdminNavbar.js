@@ -37,6 +37,13 @@ import {
   Modal,
   NavbarToggler,
   ModalHeader,
+  Row,
+  Card,
+  CardHeader,
+  CardBody,
+  Col,
+  CardTitle,
+  Table
 } from "reactstrap";
 
 function AdminNavbar(props) {
@@ -91,11 +98,16 @@ function AdminNavbar(props) {
               {/* {props.brandText} */} KOSMOSUIT DATA MANAGER
             </NavbarBrand>
           </div>
+
+              
           <NavbarToggler onClick={toggleCollapse}>
             <span className="navbar-toggler-bar navbar-kebab" />
             <span className="navbar-toggler-bar navbar-kebab" />
             <span className="navbar-toggler-bar navbar-kebab" />
           </NavbarToggler>
+
+          
+          
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
               <InputGroup className="search-bar">

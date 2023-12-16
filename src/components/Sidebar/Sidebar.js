@@ -23,7 +23,7 @@ import { PropTypes } from "prop-types";
 
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
-
+import ReactNotificationAlert from "react-notification-alert";
 // reactstrap components
 import { Nav, NavLink as ReactstrapNavLink } from "reactstrap";
 import {
@@ -38,6 +38,7 @@ function Sidebar(props) {
   const sidebarRef = React.useRef(null);
   const [isDropdownOpen, setDropdownOpen] = React.useState(false);
   // verifies if routeName is the one active (in browser input)
+  const notificationAlertInstance = new ReactNotificationAlert();
   const activeRoute = (routeName) => {
     return location.pathname === routeName ? "active" : "";
   };
@@ -129,7 +130,7 @@ function Sidebar(props) {
   return (
     <BackgroundColorContext.Consumer>
       {({ color }) => (
-        <div className="sidebar" data={color}>
+        <div className="sidebar" data={'dark'}>
           <div className="sidebar-wrapper" ref={sidebarRef}>
             {logoImg !== null || logoText !== null ? (
               <div className="logo">
@@ -262,13 +263,21 @@ function Sidebar(props) {
                       style={{ fontSize: 'small' }}
                       to={prop.layout + prop.path}
                       className="nav-link"
-                      onClick={props.toggleSidebar}
+                      onClick={() => {
+                        props.toggleSidebar();
+                        if (prop.notify) {  // Change props.prop.notify to prop.notify
+                          notify("tc")
+                        }
+                      }}
                     >
                       <i className={prop.icon} />
                       <p>{rtlActive ? prop.rtlName : prop.name}</p>
                       {welcomeNavLink && (
                         <span onClick={(e) => { e.preventDefault(); setDropdownOpen(!isDropdownOpen) }}>
-                          {isDropdownOpen ? '▼' : '►'}
+                          {isDropdownOpen ? 
+                          <div>
+                           <i class="down fas fa-angle-down" style={{position:'absolute', top:"10px", left:"173px"}}></i>
+                          </div> : <div> <i class="right fas fa-angle-left" style={{position:'absolute', top:"10px", left:"173px"}}></i></div>}
                         </span>
                       )}
                       {isDropdownOpen && welcomeNavLink}
@@ -280,6 +289,7 @@ function Sidebar(props) {
           </div>
         </div>
       )}
+      
     </BackgroundColorContext.Consumer>
   );
 }

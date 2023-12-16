@@ -21,12 +21,11 @@ import Metric from "views/Metric";
 import MedicalMetric from "views/MedicalMetric.js";
 import HumanMetric from "views/HumanMetric.js";
 import EnvironmentMetric from "views/EnvironmentMetric";
-// import Notifications from "views/Notifications.js";
+import Notifications from "views/Notifications.js";
 // import Rtl from "views/Rtl.js";
 // import TableList from "views/TableList.js";
 // import Typography from "views/Typography.js";
 // import UserProfile from "views/UserProfile.js";
-
 var routes = [
   {
     path: "/dashboard",
@@ -61,6 +60,9 @@ var routes = [
     icon: "tim-icons icon-atom",
     component: <Metric />,
     layout: "/admin",
+    notify: (place) => {
+    
+  },
   },
 
   {
@@ -108,14 +110,14 @@ var routes = [
     layout: "/admin",
   },
   
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   rtlName: "إخطارات",
-  //   icon: "tim-icons icon-bell-55",
-  //   component: <Notifications />,
-  //   layout: "/admin",
-  // },
+  {
+    path: "/notifications",
+    name: "Notifications",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <Notifications />,
+    layout: "/admin",
+  },
   // {
   //   path: "/user-profile",
   //   name: "User Profile",
