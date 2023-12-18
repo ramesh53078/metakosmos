@@ -22,6 +22,8 @@ import MedicalMetric from "views/MedicalMetric.js";
 import HumanMetric from "views/HumanMetric.js";
 import EnvironmentMetric from "views/EnvironmentMetric";
 import Notifications from "views/Notifications.js";
+import Swal from 'sweetalert2';
+
 // import Rtl from "views/Rtl.js";
 // import TableList from "views/TableList.js";
 // import Typography from "views/Typography.js";
@@ -61,7 +63,13 @@ var routes = [
     component: <Metric />,
     layout: "/admin",
     notify: (place) => {
-    
+      console.log(place);
+      Swal.fire({
+        title: 'Hello!',
+        text: 'METRICS DEFINATION will come in the future.',
+        icon: 'info', // You can use 'info' for an hourglass icon
+        confirmButtonText: 'Okay',
+      });
   },
   },
 
@@ -72,6 +80,15 @@ var routes = [
     icon: "tim-icons icon-puzzle-10",
     component: <Metric />,
     layout: "/admin",
+    notify: (place) => {
+      console.log(place);
+      Swal.fire({
+        title: 'Hello!',
+        text: 'DATA will come in the future.',
+        icon: 'info', // You can use 'info' for an hourglass icon
+        confirmButtonText: 'Okay',
+      });
+  },
   },
 
   {
@@ -81,6 +98,15 @@ var routes = [
     icon: "tfa-solid fa-user-astronaut",
     component: <Metric />,
     layout: "/admin",
+    notify: (place) => {
+      console.log(place);
+      Swal.fire({
+        title: 'Hello!',
+        text: 'SUIT CONNECT will come in the future.',
+        icon: 'info', // You can use 'info' for an hourglass icon
+        confirmButtonText: 'Okay',
+      });
+  },
   },
 
   {
@@ -90,6 +116,15 @@ var routes = [
     icon: "tim-icons fa fa-sign-in",
     component: <Metric />,
     layout: "/admin",
+    notify: (place) => {
+      console.log(place);
+      Swal.fire({
+        title: 'Hello!',
+        text: 'SESSION SUMMARY will come in the future.',
+        icon: 'info', // You can use 'info' for an hourglass icon
+        confirmButtonText: 'Okay',
+      });
+  },
   },
 
   {
@@ -99,6 +134,15 @@ var routes = [
     icon: "tim-icons icon-single-02",
     component: <Metric />,
     layout: "/admin",
+    notify: (place) => {
+      console.log(place);
+      Swal.fire({
+        title: 'Hello!',
+        text: 'USER GUIDE will come in the future.',
+        icon: 'info', // You can use 'info' for an hourglass icon
+        confirmButtonText: 'Okay',
+      });
+  },
   },
 
   {
@@ -108,16 +152,25 @@ var routes = [
     icon: "tim-icons icon-cloud-download-93",
     component: <Metric />,
     layout: "/admin",
+    notify: (place) => {
+      console.log(place);
+      Swal.fire({
+        title: 'Hello!',
+        text: 'DOWNLOADS will come in the future.',
+        icon: 'info', // You can use 'info' for an hourglass icon
+        confirmButtonText: 'Okay',
+      });
+  },
   },
   
-  {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: "tim-icons icon-bell-55",
-    component: <Notifications />,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/notifications",
+  //   name: "Notifications",
+  //   rtlName: "إخطارات",
+  //   icon: "tim-icons icon-bell-55",
+  //   component: <Notifications />,
+  //   layout: "/admin",
+  // },
   // {
   //   path: "/user-profile",
   //   name: "User Profile",

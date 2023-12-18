@@ -266,7 +266,7 @@ function Sidebar(props) {
                       onClick={() => {
                         props.toggleSidebar();
                         if (prop.notify) {  // Change props.prop.notify to prop.notify
-                          notify("tc")
+                          prop.notify("tc")
                         }
                       }}
                     >

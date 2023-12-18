@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { useEffect} from "react";
+import { useEffect,useRef} from "react";
 import { Link } from 'react-router-dom';
 import 'datatables.net-bs4/css/dataTables.bootstrap4.min.css';
 import 'datatables.net/js/jquery.dataTables.min.js';
@@ -26,6 +26,7 @@ import $ from 'jquery';
 import SuitTagImage from 'assets/img/Suit-Tile-Logo.gif';
 import HeartImage from 'assets/img/Human-Tile-Logo.gif';
 import EnvironmentImage from 'assets/img/Environment-Tile-Logo.gif';
+import SessionImage from 'assets/img/SessionImage.png'
 
 
 // reactstrap components
@@ -33,7 +34,7 @@ import { Card, CardHeader, CardBody, Row, Col,Table, Button,Modal,
   ModalHeader,FormGroup,Form,Input, ModalBody, ModalFooter } from "reactstrap";
 
 function Metric() {
-
+  const inputRef = useRef();
   useEffect(() => {
     // Initialize DataTables
     $(document).ready(function () {
@@ -42,10 +43,25 @@ function Metric() {
   }, []);
 
   const [modalSearch, setmodalSearch] = React.useState(false);
+  const [modalSession ,setmodalSession] = React.useState(false);
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      toggleModalSeession();
+    } else if (e.key === 'Escape') {
+      // Handle Escape key press (you can add your logic here)
+      console.log('Escape key pressed');
+    }
+  };
 
   const toggleModalSearch = () => {
     setmodalSearch(!modalSearch);
   };
+
+  const toggleModalSeession = () => {
+    setmodalSession(!modalSession);
+  };
+
   const handleModalOpen = () => {
     const modalContentDiv = document.querySelector('.modal-content');
     if (modalContentDiv) {
@@ -1145,6 +1161,7 @@ function Metric() {
                         <Input
                         //   defaultValue="Mike"
                           placeholder="Data Extraction"
+                          onKeyDown={handleKeyDown}
                           type="text"
                         />
                       </FormGroup>
@@ -1212,6 +1229,7 @@ function Metric() {
                       <FormGroup>
                         <Input
                           placeholder="Frequency"
+                          onClick={toggleModalSeession}
                           style={{backgroundColor:"#2b3553",borderColor:'none'}}
                           type="button" value="Submit"
                         />
@@ -1236,6 +1254,152 @@ function Metric() {
           >
             <i className="tim-icons icon-simple-remove" />
           </button>
+        </ModalHeader>
+        
+      </Modal>
+
+      <Modal
+      style={{left:'30%',backgroundColor:'rgba(231,229,230,255)'}}
+        modalClassName="modal"
+        isOpen={modalSession}
+        toggle={toggleModalSeession}
+        onOpened={handleModalOpen}
+      >
+        <ModalHeader> 
+        <ModalBody>
+        <Row>
+          <Col md="12">
+          {/* <img src={SessionImage} width='100%' height='110%' style={{marginTop:'-10%',marginLeft:'-12%'}} ></img> */}
+          <h1>Temperature Sensor Specifications</h1>
+  <table>
+    <tr>
+      <th>Sensor ID</th>
+      <td>12345</td>
+    </tr>
+    <tr>
+      <th>Device Data</th>
+      <td>
+        <table>
+          <tr>
+            <th>Sensor Type</th>
+            <td>Temperature</td>
+          </tr>
+          <tr>
+            <th>Manufacturer</th>
+            <td>Siemens</td>
+          </tr>
+          <tr>
+            <th>Model Number</th>
+            <td>Siemens-100</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <th>Physical Dimensions</th>
+      <td>10x10x2 mms</td>
+    </tr>
+    <tr>
+      <th>Characteristics</th>
+      <td>
+        <table>
+          <tr>
+            <th>Weight</th>
+            <td>200 grams</td>
+          </tr>
+          <tr>
+            <th>Range</th>
+            <td>(-20 to 100°C)</td>
+          </tr>
+          <tr>
+            <th>Resolution</th>
+            <td>(0.1°C)</td>
+          </tr>
+          <tr>
+            <th>Accuracy</th>
+            <td>(±0.5°C)</td>
+          </tr>
+          <tr>
+            <th>Sampling Rate</th>
+            <td>1 Hz</td>
+          </tr>
+          <tr>
+            <th>Voltage</th>
+            <td>5V</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <th>Power</th>
+      <td>
+        <table>
+          <tr>
+            <th>Current</th>
+            <td>50mAmp</td>
+          </tr>
+          <tr>
+            <th>Power Consumption</th>
+            <td>0.25 W</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <th>Communication</th>
+      <td>
+        <table>
+          <tr>
+            <th>Comm Protocol</th>
+            <td>MQTT</td>
+          </tr>
+          <tr>
+            <th>Data Output Format</th>
+            <td>JSON</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <th>Operating Conditions</th>
+      <td>
+        <table>
+          <tr>
+            <th>Temp Range</th>
+            <td>(-30°C to 70°C)</td>
+          </tr>
+          <tr>
+            <th>Humidity Range</th>
+            <td>(0% to 95%)</td>
+          </tr>
+          <tr>
+            <th>Calibration Interval</th>
+            <td>6 Months</td>
+          </tr>
+          <tr>
+            <th>Calibration Procedure</th>
+            <td>ISO 17025 compliant</td>
+          </tr>
+          <tr>
+            <th>Metadata Timestamp</th>
+            <td>2023-11-16T12:00:00Z</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+          </Col>
+        </Row>
+        </ModalBody>
+      
+      
+          {/* <button
+            aria-label="Close"
+            className="close"
+            onClick={toggleModalSeession}
+          >
+            <i className="tim-icons icon-simple-remove" />
+          </button> */}
         </ModalHeader>
         
       </Modal>
