@@ -210,44 +210,44 @@ function Sidebar(props) {
                       );
                       break;
 
-                      case 'USER GUIDE':
-                      welcomeNavLink = (
-                        <ul>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              ARTICLES
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              USER INTERFACE
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              FUNCTIONS
-                            </NavLink>
-                          </li>
-                        </ul>
-                      );
-                      break;
+                      // case 'USER GUIDE':
+                      // welcomeNavLink = (
+                      //   <ul>
+                      //     <li>
+                      //       <NavLink to={prop.layout + prop.path}>
+                      //         ARTICLES
+                      //       </NavLink>
+                      //     </li>
+                      //     <li>
+                      //       <NavLink to={prop.layout + prop.path}>
+                      //         USER INTERFACE
+                      //       </NavLink>
+                      //     </li>
+                      //     <li>
+                      //       <NavLink to={prop.layout + prop.path}>
+                      //         FUNCTIONS
+                      //       </NavLink>
+                      //     </li>
+                      //   </ul>
+                      // );
+                      // break;
 
-                      case 'DOWNLOADS':
-                      welcomeNavLink = (
-                        <ul>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              TOOLS
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              DEV GUIDE
-                            </NavLink>
-                          </li>
-                        </ul>
-                      );
-                      break;
+                      // case 'DOWNLOADS':
+                      // welcomeNavLink = (
+                      //   <ul>
+                      //     <li>
+                      //       <NavLink to={prop.layout + prop.path}>
+                      //         TOOLS
+                      //       </NavLink>
+                      //     </li>
+                      //     <li>
+                      //       <NavLink to={prop.layout + prop.path}>
+                      //         DEV GUIDE
+                      //       </NavLink>
+                      //     </li>
+                      //   </ul>
+                      // );
+                      // break;
                   // Add cases for other menu items similarly
   
                   default:

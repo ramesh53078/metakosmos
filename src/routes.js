@@ -21,8 +21,11 @@ import Metric from "views/Metric";
 import MedicalMetric from "views/MedicalMetric.js";
 import HumanMetric from "views/HumanMetric.js";
 import EnvironmentMetric from "views/EnvironmentMetric";
+import UserGuide from "views/UserGuide";
+import Download from "views/Download"
 import Notifications from "views/Notifications.js";
 import Swal from 'sweetalert2';
+
 
 // import Rtl from "views/Rtl.js";
 // import TableList from "views/TableList.js";
@@ -128,39 +131,21 @@ var routes = [
   },
 
   {
-    path: "/metrics",
+    path: "/user-guide",
     name: "USER GUIDE",
     rtlName: "الرموز",
     icon: "tim-icons icon-single-02",
-    component: <Metric />,
+    component: <UserGuide />,
     layout: "/admin",
-    notify: (place) => {
-      console.log(place);
-      Swal.fire({
-        title: 'Hello!',
-        text: 'USER GUIDE will come in the future.',
-        icon: 'info', // You can use 'info' for an hourglass icon
-        confirmButtonText: 'Okay',
-      });
-  },
   },
 
   {
-    path: "/metrics",
+    path: "/downloads",
     name: "DOWNLOADS",
     rtlName: "الرموز",
     icon: "tim-icons icon-cloud-download-93",
-    component: <Metric />,
+    component: <Download />,
     layout: "/admin",
-    notify: (place) => {
-      console.log(place);
-      Swal.fire({
-        title: 'Hello!',
-        text: 'DOWNLOADS will come in the future.',
-        icon: 'info', // You can use 'info' for an hourglass icon
-        confirmButtonText: 'Okay',
-      });
-  },
   },
   
   // {
