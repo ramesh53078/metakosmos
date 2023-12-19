@@ -145,70 +145,70 @@ function Sidebar(props) {
                 let welcomeNavLink = null;
   
                 switch (prop.name) {
-                  case 'DATA':
-                    welcomeNavLink = (
-                      <ul>
-                        <li>
-                          <NavLink className="nav-link" to={prop.layout + prop.path}>
-                            DATA TABLES
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={prop.layout + prop.path}>
-                            INTEGRATION
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={prop.layout + prop.path}>
-                            ADD DEVICE
-                          </NavLink>
-                        </li>
-                      </ul>
-                    );
-                    break;
-                  case 'SUIT CONNECT':
-                    welcomeNavLink = (
-                      <ul>
-                        <li>
-                          <NavLink to={prop.layout + prop.path}>
-                            SUIT BRIDGE
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={prop.layout + prop.path}>
-                            WIFI
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={prop.layout + prop.path}>
-                            API
-                          </NavLink>
-                        </li>
-                      </ul>
-                    );
-                    break;
+                  // case 'DATA':
+                  //   welcomeNavLink = (
+                  //     <ul>
+                  //       <li>
+                  //         <NavLink className="nav-link" to={prop.layout + prop.path}>
+                  //           DATA TABLES
+                  //         </NavLink>
+                  //       </li>
+                  //       <li>
+                  //         <NavLink to={prop.layout + prop.path}>
+                  //           INTEGRATION
+                  //         </NavLink>
+                  //       </li>
+                  //       <li>
+                  //         <NavLink to={prop.layout + prop.path}>
+                  //           ADD DEVICE
+                  //         </NavLink>
+                  //       </li>
+                  //     </ul>
+                  //   );
+                  //   break;
+                  // case 'SUIT CONNECT':
+                  //   welcomeNavLink = (
+                  //     <ul>
+                  //       <li>
+                  //         <NavLink to={prop.layout + prop.path}>
+                  //           SUIT BRIDGE
+                  //         </NavLink>
+                  //       </li>
+                  //       <li>
+                  //         <NavLink to={prop.layout + prop.path}>
+                  //           WIFI
+                  //         </NavLink>
+                  //       </li>
+                  //       <li>
+                  //         <NavLink to={prop.layout + prop.path}>
+                  //           API
+                  //         </NavLink>
+                  //       </li>
+                  //     </ul>
+                  //   );
+                  //   break;
 
-                    case 'SESSION SUMMARY':
-                      welcomeNavLink = (
-                        <ul>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              SESSION HISTORY
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              EXPORT SESSION
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={prop.layout + prop.path}>
-                              LOAD SESSION
-                            </NavLink>
-                          </li>
-                        </ul>
-                      );
-                      break;
+                    // case 'SESSION SUMMARY':
+                    //   welcomeNavLink = (
+                    //     <ul>
+                    //       <li>
+                    //         <NavLink to={prop.layout + prop.path}>
+                    //           SESSION HISTORY
+                    //         </NavLink>
+                    //       </li>
+                    //       <li>
+                    //         <NavLink to={prop.layout + prop.path}>
+                    //           EXPORT SESSION
+                    //         </NavLink>
+                    //       </li>
+                    //       <li>
+                    //         <NavLink to={prop.layout + prop.path}>
+                    //           LOAD SESSION
+                    //         </NavLink>
+                    //       </li>
+                    //     </ul>
+                    //   );
+                    //   break;
 
                       // case 'USER GUIDE':
                       // welcomeNavLink = (

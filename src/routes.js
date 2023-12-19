@@ -23,6 +23,9 @@ import HumanMetric from "views/HumanMetric.js";
 import EnvironmentMetric from "views/EnvironmentMetric";
 import UserGuide from "views/UserGuide";
 import Download from "views/Download"
+import MetricDefination from "views/MetricDefination";
+import Data from "views/Data";
+import SuitConnect from "views/SuitConnect";
 import Notifications from "views/Notifications.js";
 import Swal from 'sweetalert2';
 
@@ -59,57 +62,48 @@ var routes = [
   },
 
   {
-    path: "/metrics",
+    path: "/metric-defination",
     name: "METRICS DEFINATION",
     rtlName: "الرموز",
     icon: "tim-icons icon-atom",
-    component: <Metric />,
+    component: <MetricDefination />,
     layout: "/admin",
-    notify: (place) => {
-      console.log(place);
-      Swal.fire({
-        title: 'Hello!',
-        text: 'METRICS DEFINATION will come in the future.',
-        icon: 'info', // You can use 'info' for an hourglass icon
-        confirmButtonText: 'Okay',
-      });
-  },
+  //   notify: (place) => {
+  //     console.log(place);
+  //     Swal.fire({
+  //       title: 'Hello!',
+  //       text: 'METRICS DEFINATION will come in the future.',
+  //       icon: 'info', // You can use 'info' for an hourglass icon
+  //       confirmButtonText: 'Okay',
+  //     });
+  // },
   },
 
   {
-    path: "/metrics",
+    path: "/data",
     name: "DATA",
     rtlName: "الرموز",
     icon: "tim-icons icon-puzzle-10",
-    component: <Metric />,
+    component: <Data />,
     layout: "/admin",
-    notify: (place) => {
-      console.log(place);
-      Swal.fire({
-        title: 'Hello!',
-        text: 'DATA will come in the future.',
-        icon: 'info', // You can use 'info' for an hourglass icon
-        confirmButtonText: 'Okay',
-      });
-  },
+  //   notify: (place) => {
+  //     console.log(place);
+  //     Swal.fire({
+  //       title: 'Hello!',
+  //       text: 'DATA will come in the future.',
+  //       icon: 'info', // You can use 'info' for an hourglass icon
+  //       confirmButtonText: 'Okay',
+  //     });
+  // },
   },
 
   {
-    path: "/metrics",
+    path: "/suit-connects",
     name: "SUIT CONNECT",
     rtlName: "الرموز",
     icon: "tfa-solid fa-user-astronaut",
-    component: <Metric />,
+    component: <SuitConnect />,
     layout: "/admin",
-    notify: (place) => {
-      console.log(place);
-      Swal.fire({
-        title: 'Hello!',
-        text: 'SUIT CONNECT will come in the future.',
-        icon: 'info', // You can use 'info' for an hourglass icon
-        confirmButtonText: 'Okay',
-      });
-  },
   },
 
   {
