@@ -1,14 +1,9 @@
 import React from 'react';
-import PictureImage1 from 'assets/img/downloads/Picture1.png';
-import PictureImage2 from 'assets/img/downloads/Picture2.png';
-import MicroGravityImage from 'assets/img/downloads/Microgravity.png';
-import MoonImage from 'assets/img/downloads/Moon.jpg';
-import MarsImage from 'assets/img/downloads/Mars.jpg';
-import AsteroidImage from 'assets/img/downloads/Asteroid.jpg';
-import WaterImage from 'assets/img/downloads/Water.png';
-import IceCapsImage from 'assets/img/downloads/IceCaps.jpg';
-import TerrainImage from 'assets/img/downloads/Terrain.jpg';
-import IndustryImage from 'assets/img/downloads/Industry.png';
+import PictureImage1 from 'assets/img/suitconnect/Picture8.png';
+import PictureImage2 from 'assets/img/suitconnect/Picture9.png';
+import PictureImage3 from 'assets/img/suitconnect/Picture10.png';
+import PictureImage4 from 'assets/img/suitconnect/Picture11.png';
+
 import { Card, CardHeader, CardBody, Row, Col,CardImg,CardText, CardTitle, Table,Button } from "reactstrap";
 import { Link } from 'react-router-dom';
 
@@ -34,23 +29,12 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   > 
+                  <h3>SUIT BRIDGE</h3>
                     <div className="font-icon-detail">
-                      <Row >
-                        <Col 
-                          lg="4" 
-                          md="4" 
-                          sm="4"
-                          >
-                          </Col>
-                          <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
-                          >
+                    <br></br>
+                    <img src={PictureImage4}></img>
+                            <img src={PictureImage1}></img>
                           
-                          </Col>
-
-                      </Row>
                     </div>
                   </Col>
                   <Col
@@ -59,25 +43,18 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   >
+                    <h3>CONNECTION</h3>
                         <div className="font-icon-detail">
-                      <Row >
-                        <Col 
-                          lg="4" 
-                          md="4" 
-                          sm="4"
-                          >
-                          <div className="top-left">
-                          
-                          </div>
-                          </Col>
-                          <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
-                          >
-                          </Col>
-
-                      </Row>
+                           
+                               <h4>Bluetooth</h4>
+                               <br></br> <br></br>
+                               <h4>Wi-Fi</h4>
+                               <br></br> <br></br>
+                               <h4>Lora</h4>
+                               <br></br> <br></br>
+                               <h4>Cellular</h4>
+                               <br></br> <br></br>
+                               <h4>WLAN</h4>
                     </div>
                   </Col>
                   <Col
@@ -86,27 +63,23 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   > 
+                  <h3>WHITE BOX</h3>
                         <div className="font-icon-detail">
-                      <Row >
-                        <Col 
-                          lg="4" 
-                          md="4" 
-                          sm="4"
-                          >
-                          <div className="top-left">
-                          
-                          </div>
-                          </Col>
-                          <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
-                          >
-                          
-                          </Col>
-
-                      </Row>
-                    </div>
+                        <img src={PictureImage2}></img>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        
+                        <h4>Upgrade</h4>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <h4>Backup</h4>
+                        </div>
                   </Col>
                   <Col
                     className="font-icon-list col-xs-6 col-xs-6"
@@ -114,23 +87,20 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   > 
+                  <h3>CHARGE</h3>
                     <div className="font-icon-detail">
-                      <Row >
-                        <Col 
-                          lg="4" 
-                          md="4" 
-                          sm="4"
-                          >
-                          </Col>
-                          <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
-                          >
-                          
-                          </Col>
-
-                      </Row>
+                      <img src={PictureImage3}></img>
+                      <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        
+                        <h4>Cell</h4>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <h4>Cell Health</h4>
                     </div>
                   </Col>
                 </Row>

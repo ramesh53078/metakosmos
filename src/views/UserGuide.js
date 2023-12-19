@@ -17,15 +17,15 @@ function UserGuide() {
                     <img style={{marginLeft:'13%'}} src={UserGuideImage}></img>
                   </CardHeader>
                   <CardBody>
-                   <Row className='flex-end'>
+                   <Row className='flex-end' style={{marginLeft:'13%'}}>
                     <Col md="4">
-                        DEVELOPERS
+                        <h2>DEVELOPERS</h2>
                     </Col>
                     <Col md="4">
-                        SUPPORT
+                        <h2>SUPPORT</h2>
                     </Col>
                     <Col md="4">
-                        PARTNERSHIP
+                        <h2>PARTNERSHIP</h2>
                     </Col>
     
                    </Row>
