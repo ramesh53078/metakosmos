@@ -5,6 +5,22 @@ import PictureImage2 from 'assets/img/sessionsummary/Picture2.gif';
 
 import { Card, CardHeader, CardBody, Row, Col,CardImg,CardText, CardTitle, Table,Button,Label,FormGroup,Input } from "reactstrap";
 
+const customStyles = {
+  textAlign: 'center',
+  padding: '45px 0 30px',
+  border: '3px solid #4472c4',
+  // borderRadius: '35px',
+  margin: '15px 0',
+  minHeight: '168px',
+  backgroundColor:'#14181b'
+};
+
+const buttonStyles = {
+  background:'#10202b',
+  padding:'25px 120px',
+  border: '1px solid #4472c4',
+  borderRadius: '10px',
+};
 function SessionSummary() {
   return (
     <>
@@ -27,7 +43,7 @@ function SessionSummary() {
                     sm="4"
                   >
                     
-                    <div className="font-icon-detail" style={{backgroundColor:'#14181b'}}>
+                    <div className="" style={customStyles}>
                       <Row >
                         <Col 
                           lg="8" 
@@ -38,6 +54,7 @@ function SessionSummary() {
                           <h4>Would you like to load session data?</h4>
                           </Col>
                       </Row>
+                      <div style={{ height: '200px', overflowY: 'auto' }}>
                       <Table className="tablesorter" style={{textAlign:'justify'}}>
                   
                         <thead>
@@ -71,7 +88,7 @@ function SessionSummary() {
                             <td>
                               Session 2
                             </td>
-                            <td>06/10/2023</td>
+                            <td>{new Date().toLocaleDateString()}</td>
                           </tr>
 
                           <tr>
@@ -88,7 +105,7 @@ function SessionSummary() {
                             <td>
                               Session 2
                             </td>
-                            <td>06/10/2023</td>
+                            <td>{new Date().toLocaleDateString()}</td>
                           </tr>
 
                           <tr>
@@ -105,15 +122,63 @@ function SessionSummary() {
                             <td>
                               Session 2
                             </td>
-                            <td>06/10/2023</td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr><tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr><tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
                           </tr>
                         </tbody>
                       </Table>
+                      </div>
 
-                      <Button className='btn-lg' style={{ backgroundColor: '#10202b!important' }}>LOAD DATA</Button>
+                      <Button className='btn-lg' style={buttonStyles}>LOAD DATA</Button>
                       
                     </div>
                     
+                    
                   </Col>
                   <Col
                     className="font-icon-list col-xs-6 col-xs-6"
@@ -122,7 +187,7 @@ function SessionSummary() {
                     sm="4"
                   >
                     
-                        <div className="font-icon-detail" style={{backgroundColor:'#14181b'}}>
+                        <div className="" style={customStyles}>
                         <Row >
                         <Col 
                           lg="8" 
@@ -133,7 +198,7 @@ function SessionSummary() {
                           <h4>Would you like to load session data?</h4>
                           </Col>
                       </Row>
-                     
+                      <div style={{ height: '200px', overflowY: 'auto' }}>
                       <Table className="tablesorter" style={{textAlign:'justify'}}>
                   
                         <thead>
@@ -167,7 +232,7 @@ function SessionSummary() {
                             <td>
                               Session 2
                             </td>
-                            <td>06/10/2023</td>
+                            <td>{new Date().toLocaleDateString()}</td>
                           </tr>
 
                           <tr>
@@ -184,7 +249,7 @@ function SessionSummary() {
                             <td>
                               Session 2
                             </td>
-                            <td>06/10/2023</td>
+                            <td>{new Date().toLocaleDateString()}</td>
                           </tr>
 
                           <tr>
@@ -201,11 +266,60 @@ function SessionSummary() {
                             <td>
                               Session 2
                             </td>
-                            <td>06/10/2023</td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
                           </tr>
                         </tbody>
                       </Table>
-                      <Button className='btn-lg' style={{ backgroundColor: '#10202b!important' }}>EXPORT DATA</Button>
+                      </div>
+                      <Button className='btn-lg' style={buttonStyles}>EXPORT DATA</Button>
                     </div>
                     
                   </Col>
@@ -215,7 +329,7 @@ function SessionSummary() {
                     md="4"
                     sm="4"
                   >
-                        <div className="font-icon-detail" style={{backgroundColor:'#14181b'}}>
+                        <div className="" style={customStyles}>
                         <Row >
                         <Col 
                           lg="8" 
@@ -226,6 +340,7 @@ function SessionSummary() {
                           <h4>Would you like to load session data?</h4>
                           </Col>
                       </Row>
+                      <div style={{ height: '200px', overflowY: 'auto' }}>
                       <Table className="tablesorter" style={{textAlign:'justify'}}>
                   
                   <thead>
@@ -259,7 +374,7 @@ function SessionSummary() {
                       <td>
                         Session 2
                       </td>
-                      <td>06/10/2023</td>
+                      <td>{new Date().toLocaleDateString()}</td>
                     </tr>
 
                     <tr>
@@ -276,7 +391,7 @@ function SessionSummary() {
                       <td>
                         Session 2
                       </td>
-                      <td>06/10/2023</td>
+                      <td>{new Date().toLocaleDateString()}</td>
                     </tr>
 
                     <tr>
@@ -293,24 +408,73 @@ function SessionSummary() {
                       <td>
                         Session 2
                       </td>
-                      <td>06/10/2023</td>
+                      <td>{new Date().toLocaleDateString()}</td>
                     </tr>
+                    <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
+                          <tr>
+                            <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                             </FormGroup>
+                            </td>
+                            <td>
+                              Session 2
+                            </td>
+                            <td>{new Date().toLocaleDateString()}</td>
+                          </tr>
                   </tbody>
                 </Table>
-                <Button className='btn-lg' style={{ backgroundColor: '#10202b!important' }}>SAVE DATA</Button>
+                </div>
+                <Button className='btn-lg' style={buttonStyles}>SAVE DATA</Button>
                     </div>
                     
                   </Col>
                 </Row>
-                <br></br>
+                
                 <br></br>
                 <h2 style={{textAlign:'center'}}>VIDEO SESSION HISTORY</h2>
                 <Row style={{textAlign:'center'}}>
                   <Col md="6">
-                    <img src={PictureImage1}></img>
+                    <img width={'60%'} height={'auto'} src={PictureImage1}></img>
                   </Col>
                   <Col md="6">
-                    <img src={PictureImage2}></img>
+                    <img width={'60%'} height={'auto'} src={PictureImage2}></img>
                   </Col>
                 </Row>
               </CardBody>

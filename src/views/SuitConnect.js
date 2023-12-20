@@ -38,7 +38,7 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   > 
-                  <h3>SUIT BRIDGE</h3>
+                  <h3 style={{textAlign:'center'}}>SUIT BRIDGE</h3>
                     <div className="" style={customStyles}>
                     <br></br>
                     <img src={PictureImage4}></img>
@@ -52,7 +52,7 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   >
-                    <h3>CONNECTION</h3>
+                    <h3 style={{textAlign:'center'}}>CONNECTION</h3>
                     <div className="" style={customStyles}>
                       <h4 style={{ marginBottom: '19%' }}>Bluetooth</h4>
                       <h4 style={{ marginBottom: '19%' }}>Wi-Fi</h4>
@@ -67,7 +67,7 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   > 
-                  <h3>WHITE BOX</h3>
+                  <h3 style={{textAlign:'center'}}>WHITE BOX</h3>
                         <div className="" style={customStyles}>
                         <img style={{ marginBottom: '31%' }} src={PictureImage2}></img>
                         <h4 style={{ marginBottom: '31%' }}>Upgrade</h4>
@@ -80,7 +80,7 @@ function SuitConnect() {
                     md="3"
                     sm="3"
                   > 
-                  <h3>CHARGE</h3>
+                  <h3 style={{textAlign:'center'}}>CHARGE</h3>
                     <div className="" style={customStyles}>
                       <img style={{ marginBottom: '23%' }} src={PictureImage3}></img>
                         <h4 style={{ marginBottom: '24%' }}>Cell</h4>

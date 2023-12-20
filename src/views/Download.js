@@ -29,12 +29,12 @@ You acknowledge that this Software is the property of Metakosmos and is protecte
               <Row className='justify-content-center'>
                 <Col md="4" style={{ backgroundColor: '#fff', textAlign: 'center', marginRight: '10px', marginBottom: '10px' }}>
                   <button style={{ padding: '16px 120px', margin: '7px 0', border: '1px solid #000', borderRadius: '10px', whiteSpace: 'nowrap' }}>
-                  <i class="fa fa-check" style={{color:'green',fontSize:'30px'}} aria-hidden="true"></i> I agree and start the download
+                  <i class="fa fa-check" style={{color:'#7abf6b',fontSize:'30px'}} aria-hidden="true"></i> I agree and start the download
                   </button>
                 </Col>
                 <Col md="4" style={{ backgroundColor: '#fff', textAlign: 'center', marginBottom: '10px' }}>
-                  <button style={{ padding: '16px 110px', margin: '7px 0', border: '1px solid #000', borderRadius: '10px', whiteSpace: 'nowrap',color:'green' }}>
-                  <i class="fa fa-check" style={{color:'green',fontSize:'30px'}} aria-hidden="true"></i>     Upgrade Software to latest version
+                  <button style={{ padding: '16px 110px', margin: '7px 0', border: '1px solid #000', borderRadius: '10px', whiteSpace: 'nowrap',color:'#7abf6b' }}>
+                  <i class="fa fa-check" style={{color:'#7abf6b',fontSize:'30px'}} aria-hidden="true"></i>     Upgrade Software to latest version
                   </button>
                 </Col>
               </Row>
