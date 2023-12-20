@@ -28,6 +28,7 @@ import Data from "views/Data";
 import SuitConnect from "views/SuitConnect";
 import Notifications from "views/Notifications.js";
 import Swal from 'sweetalert2';
+import SessionSummary from "views/SessionSummary";
 
 
 // import Rtl from "views/Rtl.js";
@@ -107,21 +108,21 @@ var routes = [
   },
 
   {
-    path: "/metrics",
+    path: "/session-summary",
     name: "SESSION SUMMARY",
     rtlName: "الرموز",
     icon: "tim-icons fa fa-sign-in",
-    component: <Metric />,
+    component: <SessionSummary />,
     layout: "/admin",
-    notify: (place) => {
-      console.log(place);
-      Swal.fire({
-        title: 'Hello!',
-        text: 'SESSION SUMMARY will come in the future.',
-        icon: 'info', // You can use 'info' for an hourglass icon
-        confirmButtonText: 'Okay',
-      });
-  },
+  //   notify: (place) => {
+  //     console.log(place);
+  //     Swal.fire({
+  //       title: 'Hello!',
+  //       text: 'SESSION SUMMARY will come in the future.',
+  //       icon: 'info', // You can use 'info' for an hourglass icon
+  //       confirmButtonText: 'Okay',
+  //     });
+  // },
   },
 
   {

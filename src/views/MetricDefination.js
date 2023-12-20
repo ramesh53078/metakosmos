@@ -10,6 +10,7 @@ import WaterImage from 'assets/img/downloads/Water.png';
 import IceCapsImage from 'assets/img/downloads/IceCaps.jpg';
 import TerrainImage from 'assets/img/downloads/Terrain.jpg';
 import IndustryImage from 'assets/img/downloads/Industry.png';
+import FlightsImage from 'assets/img/downloads/Flight.png';
 import { Card, CardHeader, CardBody, Row, Col,CardTitle,Table } from "reactstrap";
 function MetricDefination() {
   return (
@@ -19,27 +20,42 @@ function MetricDefination() {
           <Col md="12">
           <Card>
               <CardHeader>
-
+              <h2>HUMAN SPACEFLIGHT</h2>
               </CardHeader>
               <CardBody>
-               <h2>HUMAN SPACEFLIGHT</h2>
-               <h3>PREFLIGHT </h3>
                <Row>
-                <Col md="3">
-                <h4>ANALOG</h4>
-                </Col>
-                <Col md="3">
-                <h4>NEUTRAL BUOYANCY</h4>
-                </Col>
-                <Col md="3">
-                <h4>CENTRIFUGE</h4>
-                </Col>
-                <Col>
-                <h4>MOCK PLANET</h4>
+                <Col md="1"></Col>
+                <Col md="2">
+                <h2 style={{color:'yellow'}}>PREFLIGHT </h2>
                 </Col>
                </Row>
-               <h2>INFLIGHT</h2>
+               <Row style={{textAlign:'center'}}>
+                <Col md="3">
+                <h3>ANALOG</h3>
+                </Col>
+                <Col md="3">
+                <h3>NEUTRAL BUOYANCY</h3>
+                </Col>
+                <Col md="3">
+                <h3>CENTRIFUGE</h3>
+                </Col>
+                <Col md="3">
+                <h3>MOCK PLANET</h3>
+                </Col>
+               </Row>
+               
+               <br></br><br></br>
+               <br></br><br></br>
                <Row>
+                <Col md="1"></Col>
+                <Col md="2">
+                <h2 style={{color:'yellow'}}>INFLIGHT </h2>
+                </Col>
+               </Row>
+               <Row style={{textAlign:'center'}}>
+               <Col md="3">
+                <img src={FlightsImage} width={'50%'}></img>
+                </Col>
                 <Col md="3">
                 <img src={MicroGravityImage}></img>
                 </Col>
@@ -49,22 +65,25 @@ function MetricDefination() {
                 <Col md="3">
                 <img src={MarsImage}></img>
                 </Col>
-                <Col md="3">
-                <img src={AsteroidImage}></img>
-                </Col>
                </Row>
 
                <br></br><br></br>
-               <h3>POST FLIGHT</h3>
+               <br></br><br></br>
                <Row>
+                <Col md="1"></Col>
+                <Col md="2">
+                <h2 style={{color:'yellow'}}>POST FLIGHT </h2>
+                </Col>
+               </Row>
+               <Row style={{textAlign:'center'}}>
                 <Col md="4">
-                <h4>RADIATION IMPACT</h4>
+                <h3>RADIATION IMPACT</h3>
                 </Col>
                 <Col md="4">
-                <h4>VITALS MONITORING</h4>
+                <h3>VITALS MONITORING</h3>
                 </Col>
                 <Col md="4">
-                <h4>STREGTH TRAINING</h4>
+                <h3>STREGTH TRAINING</h3>
                 </Col>
                </Row>
               </CardBody>

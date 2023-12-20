@@ -44,17 +44,12 @@ function SuitConnect() {
                     sm="3"
                   >
                     <h3>CONNECTION</h3>
-                        <div className="font-icon-detail">
-                           
-                               <h4>Bluetooth</h4>
-                               <br></br> <br></br>
-                               <h4>Wi-Fi</h4>
-                               <br></br> <br></br>
-                               <h4>Lora</h4>
-                               <br></br> <br></br>
-                               <h4>Cellular</h4>
-                               <br></br> <br></br>
-                               <h4>WLAN</h4>
+                    <div className="font-icon-detail">
+                      <h4 style={{ marginBottom: '19%' }}>Bluetooth</h4>
+                      <h4 style={{ marginBottom: '19%' }}>Wi-Fi</h4>
+                      <h4 style={{ marginBottom: '19%' }}>Lora</h4>
+                      <h4 style={{ marginBottom: '19%' }}>Cellular</h4>
+                      <h4 style={{ marginBottom: '20%' }}>WLAN</h4>
                     </div>
                   </Col>
                   <Col
@@ -65,20 +60,9 @@ function SuitConnect() {
                   > 
                   <h3>WHITE BOX</h3>
                         <div className="font-icon-detail">
-                        <img src={PictureImage2}></img>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        
-                        <h4>Upgrade</h4>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <h4>Backup</h4>
+                        <img style={{ marginBottom: '31%' }} src={PictureImage2}></img>
+                        <h4 style={{ marginBottom: '31%' }}>Upgrade</h4>
+                        <h4 style={{ marginBottom: '31%' }}>Backup</h4>
                         </div>
                   </Col>
                   <Col
@@ -89,18 +73,9 @@ function SuitConnect() {
                   > 
                   <h3>CHARGE</h3>
                     <div className="font-icon-detail">
-                      <img src={PictureImage3}></img>
-                      <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        
-                        <h4>Cell</h4>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <h4>Cell Health</h4>
+                      <img style={{ marginBottom: '25%' }} src={PictureImage3}></img>
+                        <h4 style={{ marginBottom: '25%' }}>Cell</h4>
+                        <h4 style={{ marginBottom: '24%' }}>Cell Health</h4>
                     </div>
                   </Col>
                 </Row>

@@ -64,15 +64,15 @@ function Dashboard(props) {
               <CardHeader>
                 <Row>
                   <Col className="text-left" sm="6">
-                    <h5 className="card-category">Total Shipments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
+                    {/* <h5 className="card-category">Total Shipments</h5> */}
+                    <CardTitle tag="h2">Metric Sub Clusters</CardTitle>
                   </Col>
                   <Col sm="6">
                     <ButtonGroup
                       className="btn-group-toggle float-right"
                       data-toggle="buttons"
                     >
-                      <Button
+                      {/* <Button
                         tag="label"
                         className={classNames("btn-simple", {
                           active: bigChartData === "data1",
@@ -122,7 +122,7 @@ function Dashboard(props) {
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-tap-02" />
                         </span>
-                      </Button>
+                      </Button> */}
                     </ButtonGroup>
                   </Col>
                 </Row>
@@ -142,9 +142,8 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Total Shipments</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-bell-55 text-info" /> 763,215
+                Suit Cluster Metrics
                 </CardTitle>
               </CardHeader>
               <CardBody>
@@ -160,17 +159,15 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Daily Sales</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                  3,500€
+                Human Cluster Metrics
                 </CardTitle>
               </CardHeader>
               <CardBody>
-                <div className="chart-area">
-                  <Bar
-                    data={chartExample3.data}
-                    options={chartExample3.options}
+              <div className="chart-area">
+                  <Line
+                    data={chartExample2.data}
+                    options={chartExample2.options}
                   />
                 </div>
               </CardBody>
@@ -179,23 +176,22 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Completed Tasks</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-send text-success" /> 12,100K
+                Environment Cluster Metrics
                 </CardTitle>
               </CardHeader>
               <CardBody>
-                <div className="chart-area">
+              <div className="chart-area">
                   <Line
-                    data={chartExample4.data}
-                    options={chartExample4.options}
+                    data={chartExample2.data}
+                    options={chartExample2.options}
                   />
                 </div>
               </CardBody>
             </Card>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col lg="6" md="12">
             <Card className="card-tasks">
               <CardHeader>
@@ -523,6 +519,28 @@ function Dashboard(props) {
                     </tr>
                   </tbody>
                 </Table>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row> */}
+         <Row>
+          <Col xs="12">
+            <Card className="card-chart">
+              <CardHeader>
+                <Row>
+                  <Col className="text-left" sm="6">
+                    {/* <h5 className="card-category">Total Shipments</h5> */}
+                    <CardTitle tag="h2">Full Metrics Analytics</CardTitle>
+                  </Col>
+                </Row>
+              </CardHeader>
+              <CardBody>
+                <div className="chart-area">
+                  <Line
+                    data={chartExample1[bigChartData]}
+                    options={chartExample1.options}
+                  />
+                </div>
               </CardBody>
             </Card>
           </Col>

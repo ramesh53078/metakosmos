@@ -21,16 +21,16 @@ function Data() {
               <div className="font-icon-detail">
                 <Row>
                   <Col md="3">
-                    <CardTitle>Tier 1 Data</CardTitle>
+                    <CardTitle tag="h3">Tier 1 Data</CardTitle>
                   </Col>
                   <Col md="3">
-                    <CardTitle>Tier 2 Data</CardTitle>
+                    <CardTitle tag="h3">Tier 2 Data</CardTitle>
                   </Col>
                   <Col md="3">
-                    <CardTitle>Tier 3 Data</CardTitle>
+                    <CardTitle tag="h3">Tier 3 Data</CardTitle>
                   </Col>
                   <Col md="3">
-                    <CardTitle>Tier 4 Data</CardTitle>
+                    <CardTitle tag="h3">Tier 4 Data</CardTitle>
                   </Col>
                 </Row>
                 </div>
