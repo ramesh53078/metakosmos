@@ -37,9 +37,9 @@ function Tables() {
 
   useEffect(() => {
     // Initialize DataTables
-    $(document).ready(function () {
-      $('#yourTableId').DataTable();
-    });
+    // $(document).ready(function () {
+    //   $('#yourTableId').DataTable();
+    // });
   }, []);
   return (
     <>
@@ -54,7 +54,7 @@ function Tables() {
                 <Table className="tablesorter"  id="yourTableId">
                   <thead className="text-primary">
                     <tr>
-                      <th>Name</th>
+                      <th>Metric</th>
                       <th>Country</th>
                       <th>City</th>
                       <th className="text-center">Salary</th>

@@ -32,7 +32,7 @@ import SessionSummary from "views/SessionSummary";
 
 
 // import Rtl from "views/Rtl.js";
-// import TableList from "views/TableList.js";
+import TableList from "views/TableList.js";
 // import Typography from "views/Typography.js";
 // import UserProfile from "views/UserProfile.js";
 var routes = [
@@ -159,14 +159,14 @@ var routes = [
   //   component: <UserProfile />,
   //   layout: "/admin",
   // },
-  // {
-  //   path: "/tables",
-  //   name: "Table List",
-  //   rtlName: "قائمة الجدول",
-  //   icon: "tim-icons icon-puzzle-10",
-  //   component: <TableList />,
-  //   layout: "/admin",
-  // },
+  {
+    path: "/tables",
+    name: "Table List",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-puzzle-10",
+    component: <TableList />,
+    layout: "/admin",
+  },
   // {
   //   path: "/typography",
   //   name: "Typography",

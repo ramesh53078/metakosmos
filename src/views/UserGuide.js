@@ -14,10 +14,11 @@ function UserGuide() {
               <Card>
                   <CardHeader>
                     <h3>DEMO USER VIDEO</h3>
-                    <img style={{marginLeft:'13%'}} src={UserGuideImage}></img>
+                    
                   </CardHeader>
-                  <CardBody>
-                   <Row className='flex-end' style={{marginLeft:'13%'}}>
+                  <CardBody  style={{textAlign:'center'}}>
+                  <img style={{marginBottom:'7%'}} src={UserGuideImage}></img>
+                   <Row className='flex-end'>
                     <Col md="4">
                         <h2>DEVELOPERS</h2>
                     </Col>
