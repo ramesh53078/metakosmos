@@ -74,7 +74,9 @@ function Metric() {
     <>
      <div style={{width:'75%',marginTop:'10px'}}>
                 <Row className="">
-                  <Col md="4">
+                  <Col lg="6"
+                    md="4"
+                    sm="6">
                     <Table>
                       <thead>
                         <tr>
@@ -83,7 +85,7 @@ function Metric() {
                   </thead>
                   </Table>
                   </Col>
-                  <Col md="4">
+                  <Col md="4" lg="3" sm="3">
                   <Table>
                       <thead>
                         <tr>
@@ -92,7 +94,7 @@ function Metric() {
                   </thead>
                   </Table>
                   </Col>
-                  <Col md="4">
+                  <Col md="4" lg="3" sm="3">
                   <Table>
                       <thead>
                         <tr>
@@ -104,7 +106,9 @@ function Metric() {
                 </Row>
                 {/* starts second row */}
                 <Row className="">
-                  <Col md="4">
+                  <Col lg="5"
+                    md="4"
+                    sm="6">
                     <Table>
                       <thead>
                         <tr>
@@ -113,7 +117,7 @@ function Metric() {
                   </thead>
                   </Table>
                   </Col>
-                  <Col md="2">
+                  <Col md="1">
                   <Table>
                       <thead>
                         <tr>
@@ -152,7 +156,7 @@ function Metric() {
                 </Row>
 
                 <Row className="">
-                  <Col md="4">
+                  <Col md="4" lg="6" sm="6">
                   <Table>
                       <thead>
                         <tr>
@@ -203,15 +207,23 @@ function Metric() {
                           </div>
                           </Col>
                           <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
+                          lg="6" 
+                          md="6" 
+                          sm="6"
                           >
+                            <Row>
+                              <Col md="6" lg="6" sm="6">
+                              <Button className="metric_button">Sync</Button>
+                              </Col>
+                              <Col md="6" lg="6" sm="6">
+                              <Button className="metric_button">Manual</Button>
+                              </Col>
+                            </Row>
                            
-                          <div className="top-right">
-                          <Button className="metric_button">Sync</Button>
-                            <Button className="metric_button">Manual</Button>
-                          </div>
+                          {/* <div className="top-right"> */}
+                          
+                            
+                          {/* </div> */}
                           </Col>
 
                       </Row>
@@ -849,11 +861,10 @@ function Metric() {
                           sm="6"
                           >
                              <Row>
-                              <Col md="4">
+                              <Col md="7" lg="7" sm="7">
                               <Button className="metric_button" style={{whiteSpace:'nowrap'}}>Lab Sync</Button>
                               </Col>
-                              <Col md="3"></Col>
-                              <Col md="3">
+                              <Col md="4" lg="4" sm="4">
                               <Button className="metric_button">Manual</Button>
                               </Col>
                             </Row>
@@ -1015,14 +1026,22 @@ function Metric() {
                           </div>
                           </Col>
                           <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
+                          lg="6" 
+                          md="6" 
+                          sm="6"
                           >
-                          <div className="top-right">
+                             <Row>
+                              <Col md="6" lg="6" sm="6">
+                              <Button className="metric_button">Sync</Button>
+                              </Col>
+                              <Col md="6" lg="6" sm="6">
+                              <Button className="metric_button">Manual</Button>
+                              </Col>
+                            </Row>
+                          {/* <div className="top-right">
                           <Button className="metric_button">Sync</Button>
                             <Button className="metric_button">Manual</Button>
-                          </div>
+                          </div> */}
                           </Col>
 
                       </Row>
