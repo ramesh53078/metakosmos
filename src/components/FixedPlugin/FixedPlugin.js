@@ -34,7 +34,7 @@ function FixedPlugin(props) {
           <i className="fa fa-cog fa-2x" />
         </DropdownToggle>
         <ul className="dropdown-menu show">
-          <li className="header-title">SIDEBAR BACKGROUND</li>
+          {/* <li className="header-title">SIDEBAR BACKGROUND</li>
           <li className="adjustments-line">
             <div className="badge-colors text-center">
             <Badge
@@ -74,7 +74,7 @@ function FixedPlugin(props) {
                 }}
               />{" "}
             </div>
-          </li>
+          </li> */}
           <li className="adjustments-line text-center color-change">
             <ThemeContext.Consumer>
               {({ changeTheme }) => (

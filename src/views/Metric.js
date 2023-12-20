@@ -131,7 +131,7 @@ function Metric() {
                     md="4"
                     sm="4"
                   >
-                    <div style={{ height: '100vh', overflowY: 'auto' }}> 
+                    
                     <div className="font-icon-detail">
                       <Row >
                         <Col 
@@ -148,6 +148,7 @@ function Metric() {
                           md="8" 
                           sm="8"
                           >
+                           
                           <div className="top-right">
                           <Button className="metric_button">Sync</Button>
                             <Button className="metric_button">Manual</Button>
@@ -155,6 +156,7 @@ function Metric() {
                           </Col>
 
                       </Row>
+                      <div style={{ height: '50vh', overflowY: 'auto' }}>
                       <Table className="tablesorter">
                   
                         <thead className="bg-warning">
@@ -757,11 +759,12 @@ function Metric() {
                           </tbody>
                         
                       </Table>
+                      </div>
                       <Button><Link to="/admin/human-metric">Table View</Link></Button>
                       <Button onClick={toggleModalSearch}>Add Metric</Button>
                       
                     </div>
-                    </div>
+                    
                   </Col>
                   <Col
                     className="font-icon-list col-xs-6 col-xs-6"
@@ -769,7 +772,7 @@ function Metric() {
                     md="4"
                     sm="4"
                   >
-                    <div style={{ height: '100vh', overflowY: 'auto' }}> 
+                    
                         <div className="font-icon-detail">
                       <Row >
                         <Col 
@@ -782,17 +785,27 @@ function Metric() {
                           </div>
                           </Col>
                           <Col 
-                          lg="8" 
-                          md="8" 
-                          sm="8"
+                          lg="6" 
+                          md="6" 
+                          sm="6"
                           >
-                          <div className="top-right">
+                             <Row>
+                              <Col md="4">
+                              <Button className="metric_button" style={{whiteSpace:'nowrap'}}>Lab Sync</Button>
+                              </Col>
+                              <Col md="3"></Col>
+                              <Col md="3">
+                              <Button className="metric_button">Manual</Button>
+                              </Col>
+                            </Row>
+                          {/* <div className="top-right">
                           <Button className="metric_button">Lab Sync</Button>
                             <Button className="metric_button">Manual</Button>
-                          </div>
+                          </div> */}
                           </Col>
 
                       </Row>
+                      <div style={{ height: '50vh', overflowY: 'auto' }}> 
                       <Table className="tablesorter">
                   
                         <thead className="bg-warning">
@@ -918,10 +931,11 @@ function Metric() {
                           </tr>
                         </tbody>
                       </Table>
+                      </div>
                       <Button><Link to="/admin/medical-metric">Table View</Link></Button>
                       <Button onClick={toggleModalSearch} >Add Metric</Button>
                     </div>
-                    </div>
+                    
                   </Col>
                   <Col
                     className="font-icon-list col-xs-6 col-xs-6"
@@ -929,7 +943,7 @@ function Metric() {
                     md="4"
                     sm="4"
                   >
-                    <div style={{ height: '100vh', overflowY: 'auto' }}> 
+                    
                         <div className="font-icon-detail">
                       <Row >
                         <Col 
@@ -953,6 +967,7 @@ function Metric() {
                           </Col>
 
                       </Row>
+                      <div style={{ height: '50vh', overflowY: 'auto' }}>
                       <Table className="tablesorter">
                         <thead className="bg-warning">
                           <th>Earth Metrics/Units</th>
@@ -1099,10 +1114,11 @@ function Metric() {
                                 
                               </tbody>
                       </Table>
+                      </div>
                       <Button><Link to="/admin/environment-metric">Table View</Link></Button>
                       <Button onClick={toggleModalSearch}>Add Metric</Button>
                     </div>
-                    </div>
+                    
                   </Col>
                 </Row>
               </CardBody>
