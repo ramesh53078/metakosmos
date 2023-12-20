@@ -72,44 +72,103 @@ function Metric() {
 
   return (
     <>
-     <div style={{width:'85%',marginLeft:'275px',marginTop:'10px'}}>
+     <div style={{width:'75%',marginTop:'10px'}}>
                 <Row className="">
                   <Col md="4">
+                    <Table>
+                      <thead>
+                        <tr>
                   <th>Date: {new Date().toLocaleDateString()}</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                   <Col md="4">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Suit ID : KS 001</th>
-                  </Col><Col md="4">
+                  </tr>
+                  </thead>
+                  </Table>
+                  </Col>
+                  <Col md="4">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Session ID : KS 001 aced1567</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                 </Row>
-                {/* <hr></hr> */}
+                {/* starts second row */}
                 <Row className="">
-                  <Col md="2">
+                  <Col md="4">
+                    <Table>
+                      <thead>
+                        <tr>
                   <th>Name : John Doe</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                   <Col md="2">
-                  <th>Age 26</th>
+                  <Table>
+                      <thead>
+                        <tr>
+                  <th>Age: 26</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                   <Col md="2">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Gender : Male</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
-                  <Col md="3">
+                  <Col md="2">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Ethnicity : Asian</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
-                  <Col md="3">
+                  <Col md="2">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Stage : Preflight</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                 </Row>
 
-                  {/* <hr></hr> */}
-
-                  <Row className="">
+                <Row className="">
                   <Col md="4">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Vessel: NASA</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                   <Col md="4">
+                  <Table>
+                      <thead>
+                        <tr>
                   <th>Location: GPS Enabled</th>
+                  </tr>
+                  </thead>
+                  </Table>
                   </Col>
                 </Row>
                 </div>

@@ -16344,7 +16344,7 @@ hr {
 .form-check input[type="checkbox"]:checked + .form-check-sign::before,
 .form-check input[type="checkbox"]:checked + .form-check-sign::before {
   border: none;
-  background-color: #e14eca;
+  background-color: #66bb6a;
 }
 
 .form-check .form-check-sign::after {

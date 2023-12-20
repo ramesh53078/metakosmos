@@ -1,6 +1,7 @@
 import React from 'react'
 import Pic from 'assets/img/Suit-Tile-Logo.gif';
 import UserGuideImage from 'assets/img/userguide/UserGuide.png';
+import UserGuideVideo from 'assets/Kosmosuit.mp4';
 // import PictureImage2 from 'assets/img/downloads/Picture2.png';
 
 import { Card, CardHeader, CardBody, Row, Col,CardTitle,Table } from "reactstrap";
@@ -17,7 +18,12 @@ function UserGuide() {
                     
                   </CardHeader>
                   <CardBody  style={{textAlign:'center'}}>
-                  <img style={{marginBottom:'7%'}} src={UserGuideImage}></img>
+                  {/* <img style={{marginBottom:'7%'}} src={UserGuideImage}></img> */}
+                  <video width={1020} height={680} controls autoPlay muted>
+                    <source src={UserGuideVideo} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
                    <Row className='flex-end'>
                     <Col md="4">
                         <h2>DEVELOPERS</h2>
