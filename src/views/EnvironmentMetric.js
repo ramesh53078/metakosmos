@@ -45,7 +45,7 @@ function EnvironmentMetric(props) {
             <Col md="12">
             <Card>
             <CardHeader>
-             <CardTitle tag="h4">Your Table</CardTitle>
+             <CardTitle tag="h4">Environment Metrics</CardTitle>
             </CardHeader>
           <CardBody>
           <Table className="tablesorter" id="environment_metrics" style={{textAlign:'justify'}}>

@@ -65,7 +65,7 @@ function HumanMetric() {
           <Col md="12">
           <Card>
               <CardHeader>
-                <CardTitle tag="h4">Simple Table</CardTitle>
+                <CardTitle tag="h4">Human Metric</CardTitle>
               </CardHeader>
               <CardBody>
                 <Table className="tablesorter"  id="human_metrics" style={{textAlign:'justify'}}>

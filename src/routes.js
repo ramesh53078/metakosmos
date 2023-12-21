@@ -159,14 +159,14 @@ var routes = [
   //   component: <UserProfile />,
   //   layout: "/admin",
   // },
-  {
-    path: "/tables",
-    name: "Table List",
-    rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
-    component: <TableList />,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/tables",
+  //   name: "Table List",
+  //   rtlName: "قائمة الجدول",
+  //   icon: "tim-icons icon-puzzle-10",
+  //   component: <TableList />,
+  //   layout: "/admin",
+  // },
   // {
   //   path: "/typography",
   //   name: "Typography",
