@@ -29,6 +29,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import ThemeContextWrapper from "./components/ThemeWrapper/ThemeWrapper";
 import BackgroundColorWrapper from "./components/BackgroundColorWrapper/BackgroundColorWrapper";
+import EnvironmentWrapper from "./components/EnvironmentWrapper/EnvironmentWrapper";
+import MedicalDataWrapper from "./components/MedicalDataWrapper/MedicalDataWrapper";
+import HumanDataWrapper from "components/HumanDataWrapper/HumanDataWrapper";
 import HumanMetric from "views/HumanMetric";
 import MedicalMetric from "views/MedicalMetric";
 import EnvironmentMetric from "views/EnvironmentMetric";
@@ -38,6 +41,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeContextWrapper>
     <BackgroundColorWrapper>
+      <EnvironmentWrapper>
+        <MedicalDataWrapper>
+          <HumanDataWrapper>
       <BrowserRouter>
         <Routes>
           <Route path="/admin/*" element={<AdminLayout />} />
@@ -51,6 +57,9 @@ root.render(
           />
         </Routes>
       </BrowserRouter>
+      </HumanDataWrapper>
+      </MedicalDataWrapper>
+      </EnvironmentWrapper>
     </BackgroundColorWrapper>
   </ThemeContextWrapper>
 );
