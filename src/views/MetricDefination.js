@@ -17,26 +17,26 @@ function MetricDefination() {
     <>
       <div className="content">
         <Row>
-          <Col md="12">
+          <Col md="12" lg="12" sm="3">
           <Card>
               <CardHeader>
               <h2>HUMAN SPACEFLIGHT</h2>
               </CardHeader>
               <CardBody>
                <Row>
-                <Col md="1"></Col>
-                <Col md="2">
+                <Col md="1" lg="1"></Col>
+                <Col md="2" lg="3">
                 <h2 style={{color:'yellow'}}>PREFLIGHT </h2>
                 </Col>
                </Row>
                <Row style={{textAlign:'center'}}>
-                <Col md="3">
+                <Col md="3" lg="3">
                 <h3>ANALOG</h3>
                 </Col>
-                <Col md="3">
+                <Col md="3" lg="3">
                 <h3>NEUTRAL BUOYANCY</h3>
                 </Col>
-                <Col md="3">
+                <Col md="3" lg="3">
                 <h3>CENTRIFUGE</h3>
                 </Col>
                 <Col md="3">

@@ -68,7 +68,7 @@ function MedicalMetric() {
            <CardTitle tag="h4">Medical Metrics</CardTitle>
           </CardHeader>
         <CardBody>
-        <Table className="tablesorter" id="medical_metrics" style={{textAlign:'justify'}}>
+        <Table className="tablesorter" id="medical_metrics" style={{textAlign:'justify'}} responsive>
         <thead>
               <tr>
               <th>S.No</th>

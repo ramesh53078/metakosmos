@@ -20049,6 +20049,23 @@ select.form-control option {
 }
 
 /* addning my css */
+.session_button {
+  background:'#10202b' !important;
+  padding:'25px 120px' !important;
+  border: '1px solid #4472c4' !important;
+  border-radius: '10px' !important;
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  /* Styles for screens with a width of 1024 pixels or more */
+  .session_button {
+    background: rgb(16, 32, 43);
+    padding: 11px 77px;
+    border: 1px solid rgb(68, 114, 196);
+    border-radius: 10px;
+  }
+}
+
+
 
 
 /*# sourceMappingURL=black-dashboard-react.css.map */

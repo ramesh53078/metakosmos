@@ -48,7 +48,7 @@ function EnvironmentMetric(props) {
              <CardTitle tag="h4">Environment Metrics</CardTitle>
             </CardHeader>
           <CardBody>
-          <Table className="tablesorter" id="environment_metrics" style={{textAlign:'justify'}}>
+          <Table className="tablesorter" id="environment_metrics" style={{textAlign:'justify'}} responsive>
           <thead>
               <tr>
               <th>S.No</th>

@@ -1,26 +1,9 @@
 import React from 'react';
-
 import PictureImage1 from 'assets/img/sessionsummary/Picture1.gif';
 import PictureImage2 from 'assets/img/sessionsummary/Picture2.gif';
 
 import { Card, CardHeader, CardBody, Row, Col,CardImg,CardText, CardTitle, Table,Button,Label,FormGroup,Input } from "reactstrap";
 
-const customStyles = {
-  textAlign: 'center',
-  padding: '45px 0 30px',
-  border: '3px solid #4472c4',
-  // borderRadius: '35px',
-  margin: '15px 0',
-  minHeight: '168px',
-  backgroundColor:'#14181b'
-};
-
-const buttonStyles = {
-  background:'#10202b',
-  padding:'25px 120px',
-  border: '1px solid #4472c4',
-  borderRadius: '10px',
-};
 
 
 function SessionSummary() {
@@ -45,7 +28,7 @@ function SessionSummary() {
                     sm="4"
                   >
                     
-                    <div className="" style={customStyles}>
+                    <div className="first-session">
                       <Row >
                         <Col 
                           lg="8" 
@@ -148,7 +131,7 @@ function SessionSummary() {
                       </Table>
                       </div>
 
-                      <Button className='btn-lg' style={buttonStyles}>LOAD DATA</Button>
+                      <Button className='session_button'>LOAD DATA</Button>
                       
                     </div>
                     
@@ -161,7 +144,7 @@ function SessionSummary() {
                     sm="4"
                   >
                     
-                        <div className="" style={customStyles}>
+                        <div className="first-session">
                         <Row >
                         <Col 
                           lg="8" 
@@ -265,7 +248,7 @@ function SessionSummary() {
                         </tbody>
                       </Table>
                       </div>
-                      <Button className='btn-lg' style={buttonStyles}>EXPORT DATA</Button>
+                      <Button className='btn-lg session_button'>EXPORT DATA</Button>
                     </div>
                     
                   </Col>
@@ -275,7 +258,7 @@ function SessionSummary() {
                     md="4"
                     sm="4"
                   >
-                        <div className="" style={customStyles}>
+                        <div className="first-session">
                         <Row >
                         <Col 
                           lg="8" 
@@ -379,7 +362,7 @@ function SessionSummary() {
                   </tbody>
                 </Table>
                 </div>
-                <Button className='btn-lg' style={buttonStyles}>SAVE DATA</Button>
+                <Button className='session_button'>SAVE DATA</Button>
                     </div>
                     
                   </Col>

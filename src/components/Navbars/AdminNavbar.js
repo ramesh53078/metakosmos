@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+import '../../assets/css/custom.css';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
@@ -50,6 +51,7 @@ function AdminNavbar(props) {
   const [collapseOpen, setcollapseOpen] = React.useState(false);
   const [modalSearch, setmodalSearch] = React.useState(false);
   const [color, setcolor] = React.useState("navbar-transparent");
+  
   React.useEffect(() => {
     window.addEventListener("resize", updateColor);
     // Specify how to clean up after this effect:
@@ -97,15 +99,54 @@ function AdminNavbar(props) {
             <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               {/* {props.brandText} */} KOSMOSUIT DATA MANAGER
             </NavbarBrand>
-          </div>
-
+              {(props.brandText == "METRICS SUMMARY") && <Container className="ml-3">
+                <div className="container ml-5">
+                <Row className="ml-5">
+                <Col className="ml-5" md="12">
+                <Table className="ml-5" style={{border:'3px solid #4472c4'}}>
+                      <tbody className="ml-5">
+                        <tr>
+                          <td style={{border:'3px solid #4472c4'}}>Date: {new Date().toLocaleDateString()}</td>
+                          <td style={{border:'3px solid #4472c4',}}>Suit ID: KS 001</td>
+                          <td style={{border:'3px solid #4472c4',}}>Session ID: KS 001 aced1567</td>
+                          <td style={{border:'3px solid #4472c4',}}>Name: John Doe</td>
+                          <td style={{border:'3px solid #4472c4',}}>Age: 26</td>
+                          
+                        </tr>
+                        <tr>
+                        <td style={{border:'3px solid #4472c4',}}>Gender: Male</td>
+                        <td style={{border:'3px solid #4472c4',}}>Ethnicity: Asian</td>
+                        <td style={{border:'3px solid #4472c4',}}>Stage: Preflight</td>
+                          <td style={{border:'3px solid #4472c4',}}>Vessel: NASA</td>
+                          <td style={{border:'3px solid #4472c4',}}>Location: GPS Enabled</td>
+                        </tr>
+                        {/* <tr>
+                          <td>Name: John Doe</td>
+                          <td>Age: 26</td>
+                          <td>Gender: Male</td>
+                          <td>Ethnicity: Asian</td>
+                        </tr> */}
+                        {/* <tr>
+                        <td>Stage: Preflight</td>
+                          <td>Vessel: NASA</td>
+                          <td>Location: GPS Enabled</td>
+                        </tr> */}
+                      </tbody>
+                </Table>
+                </Col>
+              </Row>
+                </div>
+              </Container>}
               
+  
+
+          </div>    
           <NavbarToggler onClick={toggleCollapse}>
             <span className="navbar-toggler-bar navbar-kebab" />
             <span className="navbar-toggler-bar navbar-kebab" />
             <span className="navbar-toggler-bar navbar-kebab" />
           </NavbarToggler>
-
+              
           
           
           <Collapse navbar isOpen={collapseOpen}>

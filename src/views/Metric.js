@@ -72,7 +72,7 @@ function Metric() {
 
   return (
     <>
-     <div style={{ width: '100%', position:'absolute',top:'10px',left:'10%' }}>
+     {/* <div style={{ width: '100%', position:'absolute',top:'10px',left:'10%' }}>
       <Table>
         <tbody>
           <tr>
@@ -93,7 +93,7 @@ function Metric() {
           </tr>
         </tbody>
       </Table>
-    </div>
+    </div> */}
       <div className="content mt-5">
         <Row>
           <Col md="12">
@@ -146,7 +146,7 @@ function Metric() {
 
                       </Row>
                       <div style={{ height: '50vh', overflowY: 'auto' }}>
-                      <Table className="tablesorter">
+                      <Table className="tablesorter" style={{textAlign:'justify'}}>
                   
                         <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                             <th>Layer 1 - Sensorsuit</th>
@@ -794,7 +794,7 @@ function Metric() {
 
                       </Row>
                       <div style={{ height: '50vh', overflowY: 'auto' }}> 
-                      <Table className="tablesorter">
+                      <Table className="tablesorter" style={{textAlign:'justify'}}>
                   
                         <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>Lab Name</th>
@@ -964,7 +964,7 @@ function Metric() {
 
                       </Row>
                       <div style={{ height: '50vh', overflowY: 'auto' }}>
-                      <Table className="tablesorter">
+                      <Table className="tablesorter" style={{textAlign:'justify'}}>
                         <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>Earth Metrics/Units</th>
                           <th></th>

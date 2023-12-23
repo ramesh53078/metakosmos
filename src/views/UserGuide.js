@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState , useEffect} from 'react'
 import Pic from 'assets/img/Suit-Tile-Logo.gif';
 import UserGuideImage from 'assets/img/userguide/UserGuide.png';
 import UserGuideVideo from 'assets/Kosmosuit.mp4';
@@ -7,6 +7,28 @@ import UserGuideVideo from 'assets/Kosmosuit.mp4';
 import { Card, CardHeader, CardBody, Row, Col,CardTitle,Table } from "reactstrap";
 
 function UserGuide() {
+  const [videoWidth, setVideoWidth] = useState(700);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Adjust the width based on the screen width
+      const screenWidth = window.innerWidth;
+      const newVideoWidth = Math.min(screenWidth, 700); // Set a maximum width of 700
+      setVideoWidth(newVideoWidth);
+    };
+
+    // Set initial width on component mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+
     return (
         <>
           <div className="content">
@@ -19,7 +41,7 @@ function UserGuide() {
                   </CardHeader>
                   <CardBody  style={{textAlign:'center'}}>
                   {/* <img style={{marginBottom:'7%'}} src={UserGuideImage}></img> */}
-                  <video width={1020} height={680} controls autoPlay muted>
+                  <video width={videoWidth} height={'auto'} controls autoPlay muted>
                     <source src={UserGuideVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>

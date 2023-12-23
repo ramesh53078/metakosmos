@@ -1,0 +1,291 @@
+
+/* ----------------------  Metrics Defination Component Css Start Here----------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  
+  h2 {
+    
+    font-size: 14px !important;
+  }
+
+  h3 {
+    
+    font-size: 12px !important;
+  }
+
+  img {
+
+    width: 60%;
+    height: auto !important;
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Styles for screens with a width of 1024 pixels or more */
+   h2 {
+    
+    font-size: 14px !important;
+  }
+
+  h3 {
+    
+    font-size: 12px !important;
+  }
+
+  img {
+
+    width: 60%;
+    height: auto !important;
+  }
+}
+
+
+/* ----------------------  Metrics Definationy Component Css End Here----------------------------- */
+
+
+/* ----------------------  Suit Connect Component Css Start Here----------------------------- */
+
+.suit-connect {
+  text-align: center;
+  padding: 45px 0 30px;
+  border: 3px solid #4472c4;
+  border-radius: 35px;
+  margin: 15px 0;
+  max-height: 100vh;
+}
+
+.suit-bridge img:first-child {
+
+  width: 25%;
+  height: auto;
+}
+
+.suit-bridge img:nth-child(2) {
+
+  width: 100%;
+  height: auto;
+}
+
+.suit-connection h4 {
+  margin-bottom: 67px; /* Adjust the percentage as needed */
+}
+
+.suit-white-box img {
+  width: 25%;
+  height: auto;
+  margin-bottom: 105px;
+}
+
+.suit-white-box h4 {
+  margin-bottom: 106px;
+}
+.suit-charge img {
+  width: 28%;
+  height: auto;
+  margin-bottom: 105px;
+}
+
+.suit-charge h4 {
+  margin-bottom: 101px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  
+  
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  
+  .suit-connection h4 {
+    margin-bottom: 12px; /* Adjust the percentage as needed */
+  }
+  
+  .suit-white-box img {
+    width: 25%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .suit-white-box h4 {
+    margin-bottom: 35px;
+  }
+  .suit-charge img {
+    width: 28%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .suit-charge h4 {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+  
+  .suit-connection h4 {
+    margin-bottom: 38px; /* Adjust the percentage as needed */
+  }
+  
+  .suit-white-box img {
+    width: 25%;
+    height: auto;
+    margin-bottom: 70px;
+  }
+  
+  .suit-white-box h4 {
+    margin-bottom: 67px;
+  }
+  .suit-charge img {
+    width: 28%;
+    height: auto;
+    margin-bottom: 70px;
+  }
+  
+  .suit-charge h4 {
+    margin-bottom: 65px;
+  }
+}
+
+/* ----------------------  Suit Connect Component Css End Here----------------------------- */
+
+
+
+
+
+/* ----------------------  Session Summary Component Css Start Here----------------------------- */
+
+.first-session {
+  text-align: center;
+  padding: 45px 0 30px;
+  border: 3px solid #4472c4;
+  margin: 15px 0;
+  min-height: 168px;
+  background-color:#14181b
+}
+.session_button {
+  background: #10202b !important;
+  padding:25px 120px !important;
+  border: 1px solid #4472c4 !important;
+  border-radius: 10px !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* Styles for screens with a width of 1024 pixels or more */
+  .session_button {
+    background: #10202b !important;
+    padding: 11px 77px !important;
+    border: 1px solid #4472c4 !important;
+    border-radius: 10px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Styles for screens with a width of 1024 pixels or more */
+  .session_button {
+    background: #10202b !important;
+    padding: 11px 77px !important;
+    border: 1px solid #4472c4 !important;
+    border-radius: 10px !important;
+  }
+}
+
+/* ----------------------  Session Summary Component Css End Here----------------------------- */
+
+/* ----------------------  Downloads Component Css Star Here----------------------------- */
+
+.downloads {
+ background-color: #fff; 
+ text-align: 'center'; 
+ margin-right: 10px;
+ margin-left: 10px;
+ margin-bottom: 10px;
+}
+
+.downloads .agree {
+  padding:16px 125px;
+   margin:7px 0; 
+   border:1px solid #000; 
+   border-radius: 10px;
+   white-space: nowrap;
+}
+
+.downloads .upgrade {
+  padding:16px 115px;
+   margin:7px 0; 
+   border:1px solid #000; 
+   border-radius: 10px;
+   white-space: nowrap;
+   color:#7abf6b;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  
+
+  .downloads {
+    background-color: #fff; 
+    text-align: 'center'; 
+    margin-right: 10px;
+    position: absolute;
+    padding-right: 40px !important;
+    margin-left: 40px;
+    margin-bottom: 20px;
+   }
+  .downloads .agree {
+    padding:16px 0;
+    position: absolute;
+    left: 1px;
+     margin:7px 0; 
+     border:1px solid #000; 
+     margin-right: 10px;
+     border-radius: 10px;
+     white-space: nowrap;
+  }
+  
+  .downloads .upgrade {
+    padding:15px 0;
+     margin:7px 0; 
+     position: absolute;
+     left: 1px;
+     border:1px solid #000; 
+     border-radius: 10px;
+     white-space: nowrap;
+     color:#7abf6b;
+  }
+  
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+  
+  .downloads .agree {
+    padding:16px 50px;
+     margin:7px 0; 
+     border:1px solid #000; 
+     border-radius: 10px;
+     white-space: nowrap;
+  }
+  
+  .downloads .upgrade {
+    padding:16px 40px;
+     margin:7px 0; 
+     border:1px solid #000; 
+     border-radius: 10px;
+     white-space: nowrap;
+     color:#7abf6b;
+  }
+  
+}
+
+
+
+/* ----------------------  Download Component Css End Here----------------------------- */
+
+
+
+
+
+
+
+
+

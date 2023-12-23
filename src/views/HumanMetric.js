@@ -68,7 +68,7 @@ function HumanMetric() {
                 <CardTitle tag="h4">Human Metric</CardTitle>
               </CardHeader>
               <CardBody>
-                <Table className="tablesorter"  id="human_metrics" style={{textAlign:'justify'}}>
+                <Table className="tablesorter"  id="human_metrics" style={{textAlign:'justify'}} responsive>
                   <thead className="text-primary">
                     <tr>
                       <th>S.NO</th>
