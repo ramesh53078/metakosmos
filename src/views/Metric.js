@@ -72,114 +72,32 @@ function Metric() {
 
   return (
     <>
-     <div style={{width:'75%',marginTop:'10px'}}>
-                <Row className="">
-                  <Col lg="6"
-                    md="4"
-                    sm="6">
-                    <Table>
-                      <thead>
-                        <tr>
-                  <th>Date: {new Date().toLocaleDateString()}</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="4" lg="3" sm="3">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Suit ID : KS 001</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="4" lg="3" sm="3">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Session ID : KS 001 aced1567</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                </Row>
-                {/* starts second row */}
-                <Row className="">
-                  <Col lg="5"
-                    md="4"
-                    sm="6">
-                    <Table>
-                      <thead>
-                        <tr>
-                  <th>Name : John Doe</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="1">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Age: 26</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="2">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Gender : Male</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="2">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Ethnicity : Asian</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="2">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Stage : Preflight</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                </Row>
-
-                <Row className="">
-                  <Col md="4" lg="6" sm="6">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Vessel: NASA</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                  <Col md="4">
-                  <Table>
-                      <thead>
-                        <tr>
-                  <th>Location: GPS Enabled</th>
-                  </tr>
-                  </thead>
-                  </Table>
-                  </Col>
-                </Row>
-                </div>
-      <div className="content">
+     <div style={{ width: '100%', position:'absolute',top:'10px',left:'10%' }}>
+      <Table>
+        <tbody>
+          <tr>
+            <td>Date: {new Date().toLocaleDateString()}</td>
+            <td>Suit ID: KS 001</td>
+            <td>Session ID: KS 001 aced1567</td>
+          </tr>
+          <tr>
+            <td>Name: John Doe</td>
+            <td>Age: 26</td>
+            <td>Gender: Male</td>
+            <td>Ethnicity: Asian</td>
+          </tr>
+          <tr>
+          <td>Stage: Preflight</td>
+            <td>Vessel: NASA</td>
+            <td>Location: GPS Enabled</td>
+          </tr>
+        </tbody>
+      </Table>
+    </div>
+      <div className="content mt-5">
         <Row>
           <Col md="12">
-            <Card 
+            <Card className="mt-5"
             // style={{backgroundColor:'rgba(136,120,130,255)'}}
             >
               <CardHeader>
@@ -230,7 +148,7 @@ function Metric() {
                       <div style={{ height: '50vh', overflowY: 'auto' }}>
                       <Table className="tablesorter">
                   
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                             <th>Layer 1 - Sensorsuit</th>
                             <th>Metric/Unit</th>
                         </thead>
@@ -301,7 +219,7 @@ function Metric() {
                           <td>4°C</td>
                         </tr>
                         </tbody>
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                            Layer 2 - Bladder
                           </th>
@@ -353,7 +271,7 @@ function Metric() {
                           <td>MPA</td>
                         </tr>
                         </tbody>
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                           Layer 3 - Exoskeleton
                           </th>
@@ -380,7 +298,7 @@ function Metric() {
                         </tr>
                         </tbody>
 
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                           Layer 4 - Exosuit 
                           </th>
@@ -444,7 +362,7 @@ function Metric() {
                         </tbody>
 
                         
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                           Gloves
                           </th>
@@ -467,7 +385,7 @@ function Metric() {
                         </tr>
                         </tbody>
 
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                           Helmet
                           </th>
@@ -490,7 +408,7 @@ function Metric() {
                         </tr>
                         </tbody>
 
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                           Boots
                           </th>
@@ -509,7 +427,7 @@ function Metric() {
                         </tr>
                         </tbody>
 
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>
                           Life Support
                           </th>
@@ -528,7 +446,7 @@ function Metric() {
                         </tr>
                         </tbody>
 
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                         <th>Life Support</th>
                         <th></th>
                       </thead>
@@ -568,7 +486,7 @@ function Metric() {
                       </tbody>
 
                         {/* cluster  */}
-                      <thead className="bg-warning">
+                      <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                         <th>Power</th>
                         <th></th>
                       </thead>
@@ -591,7 +509,7 @@ function Metric() {
                         </tr>
                       </tbody>
 
-                      <thead className="bg-warning">
+                      <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                         <th>Avionics</th>
                         <th></th>
                       </thead>
@@ -611,7 +529,7 @@ function Metric() {
                       </tbody>
 
 
-                      <thead className="bg-warning">
+                      <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                         <th>Suit Configuration</th>
                         <th></th>
                       </thead>
@@ -634,7 +552,7 @@ function Metric() {
                         </tr>
                       </tbody>
 
-                      <thead className="bg-warning">
+                      <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                         <th>Suit Biomechanics</th>
                         <th></th>
                       </thead>
@@ -795,7 +713,7 @@ function Metric() {
                             </tr>
                           </tbody>
 
-                          <thead className="bg-warning">
+                          <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                             <th>Suit Positioning</th>
                             <th></th>
                           </thead>
@@ -810,7 +728,7 @@ function Metric() {
                             </tr>
                           </tbody>
 
-                          <thead className="bg-warning">
+                          <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                             <th>Suit Motion Capture</th>
                             <th></th>
                           </thead>
@@ -878,7 +796,7 @@ function Metric() {
                       <div style={{ height: '50vh', overflowY: 'auto' }}> 
                       <Table className="tablesorter">
                   
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>Lab Name</th>
                           <th></th>
                         </thead>
@@ -1047,7 +965,7 @@ function Metric() {
                       </Row>
                       <div style={{ height: '50vh', overflowY: 'auto' }}>
                       <Table className="tablesorter">
-                        <thead className="bg-warning">
+                        <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                           <th>Earth Metrics/Units</th>
                           <th></th>
                         </thead>
@@ -1086,7 +1004,7 @@ function Metric() {
                           </tr>
                         </tbody>
 
-                          <thead className="bg-warning">
+                          <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                             <th>Moon Metrics/Units</th>
                             <th></th>
                           </thead>
@@ -1121,7 +1039,7 @@ function Metric() {
                             </tr>
                           </tbody>
 
-                            <thead className="bg-warning">
+                            <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                               <th>Mars Metrics/Units</th>
                               <th></th>
                             </thead>
@@ -1156,7 +1074,7 @@ function Metric() {
                               </tr>
                             </tbody>
 
-                              <thead className="bg-warning">
+                              <thead style={{ backgroundImage: 'linear-gradient(to bottom left, #344675, #263148, #344675)',color:'#fff' }}>
                                 <th>Mercury Metrics/Units</th>
                                 <th></th>
                               </thead>
