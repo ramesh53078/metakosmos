@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect } from "react";
 import '../../assets/css/custom.css';
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -50,6 +50,7 @@ import {
 function AdminNavbar(props) {
   const [collapseOpen, setcollapseOpen] = React.useState(false);
   const [modalSearch, setmodalSearch] = React.useState(false);
+  const [modalShown, setModalShown] = React.useState(false);
   const [color, setcolor] = React.useState("navbar-transparent");
   
   React.useEffect(() => {
@@ -80,6 +81,34 @@ function AdminNavbar(props) {
   const toggleModalSearch = () => {
     setmodalSearch(!modalSearch);
   };
+
+  const sessionModalSearch = () => {
+    setModalShown(!modalShown);
+  };
+
+
+  useEffect(() => {
+    // Check for the condition to open the modal on specific routes
+    if (props.brandText === "METRICS SUMMARY") {
+      sessionModalSearch();
+       setTimeout(() => {
+        setModalShown(false);
+      }, 10000);
+
+      // Clean up the timeout to avoid memory leaks
+      // return () => clearTimeout(delay);
+    }
+  }, [props.brandText,]);
+
+  const handleModalOpen = () => {
+    const modalContentDiv = document.querySelector('.modal-content');
+    if (modalContentDiv) {
+      modalContentDiv.style.marginBottom = '20px';
+      modalContentDiv.classList.add('card');
+      
+    }
+  };
+
   return (
     <>
       <Navbar className={classNames("navbar-absolute", color)} expand="lg">
@@ -99,44 +128,33 @@ function AdminNavbar(props) {
             <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               {/* {props.brandText} */} KOSMOSUIT DATA MANAGER
             </NavbarBrand>
-              {(props.brandText == "METRICS SUMMARY") && <Container className="ml-3">
-                <div className="container ml-5">
+              {/* {(props.brandText == "METRICS SUMMARY") && <Container className="ml-2">
+                <div className="container topbar-table-content  ml-5">
                 <Row className="ml-5">
                 <Col className="ml-5" md="12">
-                <Table className="ml-5" style={{border:'3px solid #4472c4'}}>
+                <Table className="ml-5 topbar-table" style={{textAlign:'justify'}}>
                       <tbody className="ml-5">
                         <tr>
-                          <td style={{border:'3px solid #4472c4'}}>Date: {new Date().toLocaleDateString()}</td>
-                          <td style={{border:'3px solid #4472c4',}}>Suit ID: KS 001</td>
-                          <td style={{border:'3px solid #4472c4',}}>Session ID: KS 001 aced1567</td>
-                          <td style={{border:'3px solid #4472c4',}}>Name: John Doe</td>
-                          <td style={{border:'3px solid #4472c4',}}>Age: 26</td>
-                          
-                        </tr>
-                        <tr>
-                        <td style={{border:'3px solid #4472c4',}}>Gender: Male</td>
-                        <td style={{border:'3px solid #4472c4',}}>Ethnicity: Asian</td>
-                        <td style={{border:'3px solid #4472c4',}}>Stage: Preflight</td>
-                          <td style={{border:'3px solid #4472c4',}}>Vessel: NASA</td>
-                          <td style={{border:'3px solid #4472c4',}}>Location: GPS Enabled</td>
-                        </tr>
-                        {/* <tr>
+                          <td>Date: {new Date().toLocaleDateString()}</td>
+                          <td>Suit ID: KS 001</td>
+                          <td>Session ID: KS 001 aced1567</td>
                           <td>Name: John Doe</td>
                           <td>Age: 26</td>
-                          <td>Gender: Male</td>
-                          <td>Ethnicity: Asian</td>
-                        </tr> */}
-                        {/* <tr>
+
+                        </tr>
+                        <tr>
+                        <td>Gender: Male</td>
+                        <td>Ethnicity: Asian</td>
                         <td>Stage: Preflight</td>
                           <td>Vessel: NASA</td>
-                          <td>Location: GPS Enabled</td>
-                        </tr> */}
+                          <td>Location:GPSEnabled</td>
+                        </tr>
                       </tbody>
                 </Table>
                 </Col>
               </Row>
                 </div>
-              </Container>}
+              </Container>} */}
               
   
 
@@ -229,10 +247,71 @@ function AdminNavbar(props) {
       </Navbar>
       <Modal
         modalClassName="modal-search"
+        isOpen={modalShown}
+        toggle={sessionModalSearch}
+        onOpened={handleModalOpen}
+      >
+        <ModalHeader> 
+        <Row className="ml-5">
+        <Col className="col-3" style={{ textAlign: 'justify', whiteSpace: 'nowrap' }}>
+          <p>Date: {new Date().toLocaleDateString()}</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Suit ID: KS 001</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Session ID: KS 001 aced1567</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Name: John Doe</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Age: 26</p>
+        </Col>
+      </Row>
+      <Row className="ml-5">
+        <Col className="col-3" >
+          <p>Gender: Male</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Ethnicity: Asian</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Stage: Preflight</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Vessel: NASA</p>
+        </Col>
+        <Col className="col-3" >
+          <p>Location: GPSEnabled</p>
+        </Col>
+      </Row>
+      <button
+            aria-label="Close"
+            className="close"
+            onClick={sessionModalSearch}
+          >
+            <i className="tim-icons icon-simple-remove" />
+          </button>
+          {/* <Input placeholder="SEARCH" type="text" />
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={toggleModalSearch}
+          >
+            <i className="tim-icons icon-simple-remove" />
+          </button> */}
+          
+        </ModalHeader>
+      </Modal>
+
+      <Modal
+        modalClassName="modal-search"
         isOpen={modalSearch}
         toggle={toggleModalSearch}
+        onOpened={handleModalOpen}
       >
-        <ModalHeader>
+        <ModalHeader> 
           <Input placeholder="SEARCH" type="text" />
           <button
             aria-label="Close"

@@ -1,3 +1,123 @@
+/* ----------------------  Metrics  Component Css Start Here----------------------------- */
+
+.metric_button {
+  padding: 20px;
+}
+
+.top-left img {
+  width: 80px !important;
+  height: auto !important;
+  margin-bottom: -10% !important;
+  margin-left: 15% !important;
+  
+}
+
+.topbar-table.table > thead > tr > th,
+.topbar-table.table > tbody > tr > th,
+.topbar-table.table > tfoot > tr > th,
+.topbar-table.table > thead > tr > td,
+.topbar-table.table > tbody > tr > td,
+.topbar-table.table > tfoot > tr > td {
+  border: none !important;
+}
+
+.topbar-table.table > tbody > tr:first-child > td:not(:first-child) {
+  padding-left: 185px;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+  .metric_button {
+    padding: 10px !important;
+  }
+
+  .metric_button:first-child {
+    margin-left: 130% !important;
+  }
+
+  .top-left img {
+    width: 80px !important;
+    height: auto !important;
+    margin-bottom: -44% !important;
+    
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .metric_button {
+    padding: 6px !important;
+  }
+
+  .metric_button:first-child {
+    margin-left: -25% !important;
+  }
+
+  .top-left img {
+    width: 80px !important;
+    height: auto !important;
+    margin-bottom: 14% !important;
+    
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  .metric_button {
+    font-size: 10px !important;
+    padding: 7px !important;
+  }
+  .metric_button:first-child {
+    margin-left: -7% !important;
+  }
+  
+
+  .top-left img {
+    width: 70px !important;
+    height: auto !important;
+    margin-bottom: 12px !important;
+  }
+
+  .topbar-table.table > tbody > tr > td {
+    
+    font-size: 10px !important;
+  }
+
+  .topbar-table.table > tbody > tr:first-child > td {
+    padding-left: 1px !important;
+  }
+
+  .topbar-table.table > tbody > tr:nth-child(2) > td {
+    padding-left: 1px !important;
+  }
+
+  
+  @media screen and (min-width: 992px) and (max-width: 1024px) {
+
+    .topbar-table table {
+  
+      margin-left: 1% !important;
+      font-size: 12px;
+      padding: 100px !important;
+    }
+  
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+
+  .metric_button {
+    padding: 10px !important;
+  }  
+}
+/* ----------------------  Metrics Component Css Start Here----------------------------- */
+
 
 /* ----------------------  Metrics Defination Component Css Start Here----------------------------- */
 
