@@ -93,7 +93,7 @@ function AdminNavbar(props) {
       sessionModalSearch();
        setTimeout(() => {
         setModalShown(false);
-      }, 10000);
+      }, 5000);
 
       // Clean up the timeout to avoid memory leaks
       // return () => clearTimeout(delay);

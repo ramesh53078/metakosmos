@@ -1170,12 +1170,15 @@ function Metric() {
                     <Col className="px-md-1" md="12">
                       <FormGroup>
                         <label>Data Extraction</label>
-                        <Input
-                        //   defaultValue="Mike"
-                          placeholder="Data Extraction"
-                          onKeyDown={handleKeyDown}
-                          type="text"
-                        />
+                        <select className="form-control"
+                          onChange={toggleModalSeession}
+                        >
+                          <option value="" disabled selected>Select an option</option>
+                          <option value="option1">Option 1</option>
+                          <option value="option2">Option 2</option>
+                          <option value="option3">Option 3</option>
+                          {/* Add more options as needed */}
+                        </select>
                       </FormGroup>
                     </Col>
                     <Col className="px-md-1" md="12">
@@ -1271,8 +1274,7 @@ function Metric() {
       </Modal>
 
       <Modal
-      style={{left:'30%',backgroundColor:'rgba(231,229,230,255)'}}
-        modalClassName="modal"
+        modalClassName="modal data-extraction"
         isOpen={modalSession}
         toggle={toggleModalSeession}
         onOpened={handleModalOpen}
@@ -1405,13 +1407,13 @@ function Metric() {
         </ModalBody>
       
       
-          {/* <button
+          <button
             aria-label="Close"
             className="close"
             onClick={toggleModalSeession}
           >
             <i className="tim-icons icon-simple-remove" />
-          </button> */}
+          </button>
         </ModalHeader>
         
       </Modal>
