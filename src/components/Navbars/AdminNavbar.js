@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Black Dashboard React v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React, { useEffect } from "react";
 import '../../assets/css/custom.css';
 // nodejs library that concatenates classes
@@ -187,7 +171,7 @@ function AdminNavbar(props) {
                   <p className="d-lg-none">Notifications</p>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-navbar" right tag="ul">
-                  <NavLink tag="li">
+                  {/* <NavLink tag="li">
                     <DropdownItem className="nav-item">
                       Mike John responded to your email
                     </DropdownItem>
@@ -211,7 +195,7 @@ function AdminNavbar(props) {
                     <DropdownItem className="nav-item">
                       Another one
                     </DropdownItem>
-                  </NavLink>
+                  </NavLink> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
