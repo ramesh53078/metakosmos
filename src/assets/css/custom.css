@@ -416,7 +416,132 @@
 
 
 
+
+
 /* ----------------------  Download Component Css End Here----------------------------- */
+
+/* Front end Css Starts Here  */
+
+.navbar-nav ul:last-child li a {
+  color: #6a6d6f !important;
+  font-size: 16px !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Alternox';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+/* Style for each button in the navigation bar */
+li {
+  float: left;
+}
+
+/* Style for the buttons */
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* You can change the background color */
+}
+
+
+
+/* Style for each button in the navigation bar */
+li {
+    float: left;
+}
+
+/* Style for the buttons */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the color of the buttons on hover */
+li a:hover {
+    background-color: #555;
+}
+  text-decoration: none;
+}
+
+.front_button {
+  background: #10202b !important;
+  padding:20px 35px !important;
+  border: 1px solid #4472c4 !important;
+  border-radius: 10px !important;
+}
+
+.sliders {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  height:150px;
+  padding:25px;
+  border-radius:5px;
+  background-color:#363636;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+input{
+  -webkit-appearance: none;
+  width: 15rem;
+  background:transparent;
+}
+
+/* Track Styles  */
+/* chrome, safari, edge, firefox */
+input::-webkit-slider-runnable-track{
+  height:5px;
+  border-radius:20px;
+}
+
+input::-moz-range-track{
+  height:5px;
+  border-radius:20px;
+}
+
+input::-webkit-slider-runnable-track {
+  background:#092c42;
+}
+
+input::-moz-range-thumb:hover{
+  cursor:grab;
+}
+input::-webkit-slider-thumb:hover{
+  cursor:grab;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height:16px;
+  width:16px;
+  border-radius:50%;
+  border:none;
+  background-color:#01426a;
+  box-shadow:inset .5px .5px 1px #57575780; 
+  transform:translateY(-5px);
+}
+
+
+
+
 
 
 

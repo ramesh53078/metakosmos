@@ -30,6 +30,7 @@ import HumanDataWrapper from "components/HumanDataWrapper/HumanDataWrapper";
 import HumanMetric from "views/HumanMetric";
 import MedicalMetric from "views/MedicalMetric";
 import EnvironmentMetric from "views/EnvironmentMetric";
+import Home from "front/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -43,12 +44,13 @@ root.render(
         <Routes>
           <Route path="admin/*" element={<AdminLayout />} />
           <Route path="/rtl/*" element={<RTLLayout />} />
+          <Route path="/" element={<Home />} />
           {/* <Route path="/admin/*" element={<HumanMetric></HumanMetric>} />
           <Route path="/admin/*" element={<MedicalMetric />} />
           <Route path="/admin/*" element={<EnvironmentMetric/>} /> */}
           <Route
             path="*"
-            element={<Navigate to="admin/dashboard" replace />}
+            element={<Navigate to="/" replace />}
           />
         </Routes>
       </BrowserRouter>

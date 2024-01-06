@@ -41,10 +41,20 @@ function UserGuide() {
                   </CardHeader>
                   <CardBody  style={{textAlign:'center'}}>
                   {/* <img style={{marginBottom:'7%'}} src={UserGuideImage}></img> */}
-                  <video width={videoWidth} height={'auto'} controls autoPlay muted>
+                  {/* <video width={videoWidth} height={'auto'} controls autoPlay muted>
                     <source src={UserGuideVideo} type="video/mp4" />
                     Your browser does not support the video tag.
-                  </video>
+                  </video> */}
+
+                  <iframe
+                    width={videoWidth}
+                    height={500}
+                    src="https://www.youtube.com/embed/0jKWYI3xLSo"
+                    title="YouTube Video"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                  ></iframe>
 
                    <Row className='flex-end'>
                     <Col md="4">
